@@ -98,7 +98,6 @@ public class Main {
         System.out.println();
     }
 
-    // ===== SWITCH CONTROL =====
     static void menu() {
         outer:
         while (true) {
