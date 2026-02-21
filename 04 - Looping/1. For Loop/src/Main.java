@@ -9,3 +9,7 @@ public class Main {
 //  for (inisialisasi; kondisi; perubahan) {
 //      aksi;
 //  }
+
+// int i = 1 : nilai awal
+// i <= 5 : Selama kondisi true → loop jalan
+// i++ : Setiap loop → tambah 1 ! infinite loop
