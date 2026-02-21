@@ -11,4 +11,9 @@ public class Main {
     }
 }
 
-// import java.util.Scanner;
+// import java.util.Scanner; : import library Scanner
+
+// Scanner input = new Scanner(System.in); :
+// • bikin object scanner
+// • baca dari keyboard (System.in)
+
