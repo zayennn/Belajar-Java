@@ -18,6 +18,14 @@ public class Main{
 // void = ga ngembaliin nilai
 // main = nama method utama
 // String[] args = parameter dari command line
+// String[] args itu parameter khusus buat method main() yang dipake buat nerima argumen dari command line waktu program dijalanin.
+
+//public class Main {
+//    public static void main(String[] args) {
+//        System.out.println("Argumen ke-0: " + args[0]);
+//        System.out.println("Argumen ke-1: " + args[1]);
+//    }
+//}
 
 // System.out.println : ini buat nampilin teks ke layar/terminal
 // System = sistem java

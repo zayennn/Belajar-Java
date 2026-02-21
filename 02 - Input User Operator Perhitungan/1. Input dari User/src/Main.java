@@ -1,6 +1,10 @@
 import java.util.Scanner;
 
 public class Main {
+    public static String latihan(String[] args) {
+
+    }
+
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
@@ -17,3 +21,12 @@ public class Main {
 // • bikin object scanner
 // • baca dari keyboard (System.in)
 
+// String nama = input.nextLine(); : ambil input teks 1 baris penuh
+
+// Jenis input scanner:
+//  | Method        | Fungsi             |
+//  | ------------- | ------------------ |
+//  | nextLine()    | baca teks          |
+//  | nextInt()     | baca angka bulat   |
+//  | nextDouble()  | baca angka desimal |
+//  | nextBoolean() | true / false       |
