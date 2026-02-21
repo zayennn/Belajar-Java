@@ -4,14 +4,19 @@ public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        System.out.print("masukan umur kamu : ");
-        int umur = input.nextInt();
+        System.out.print("masukan username : ");
+        String username = input.nextLine();
 
-        if (umur >= 19) {
-            System.out.print("Dewasa");
+        System.out.print("masukan password : ");
+        String password = input.nextLine();
+
+        if (username.equals("admin") && password.equals("12345")) {
+            System.out.print("login berhasil");
         } else {
-            System.out.print("Remaja");
+            System.out.print("login gagal");
         }
+
+        input.close();
     }
 }
 
