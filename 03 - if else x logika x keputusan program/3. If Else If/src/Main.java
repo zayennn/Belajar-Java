@@ -18,6 +18,8 @@ public class Main {
         } else  {
             System.out.println("D");
         }
+
+        input.close();
     }
 }
 
