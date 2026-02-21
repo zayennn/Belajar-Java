@@ -63,9 +63,7 @@ public class Main {
 
 //        latihan 4
         for (int i = 2; i <= 20; i += 2) {
-            if (i % 2 == 0) {
-                System.out.println(i);
-            }
+            System.out.println(i);
         }
 
 //        mini project
