@@ -11,7 +11,6 @@ public class Main {
         System.out.printf("Halo %s, selamat datang.\n\n", n);
     }
 
-    // ===== LEVEL 2 STYLE CALC =====
     static void kalkulator() {
         System.out.println("=== KALKULATOR SEDERHANA ===");
         System.out.print("Angka 1: ");
