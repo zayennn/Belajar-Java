@@ -50,7 +50,6 @@ public class Main {
         System.out.println();
     }
 
-    // ===== LOOP + BREAK + CONTINUE + LABEL =====
     static void tebakAngka() {
         System.out.println("=== GAME TEBAK ANGKA ===");
         int target = (int) (Math.random() * 10) + 1;
