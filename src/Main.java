@@ -39,7 +39,6 @@ public class Main {
         System.out.println("Grade: " + hasil + "\n");
     }
 
-    // ===== LEVEL 4 LOOPING =====
     static void tabelPerkalian() {
         System.out.println("=== TABEL PERKALIAN ===");
         System.out.print("Angka: ");
