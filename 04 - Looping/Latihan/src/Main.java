@@ -75,6 +75,6 @@ public class Main {
         int angka3 = input.nextInt();
         miniProject(angka3);
 
-
+        input.close();
     }
 }
