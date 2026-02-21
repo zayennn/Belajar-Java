@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        int menu = 3;
+        int menu = 6;
 
         switch (menu) {
             case 1:
@@ -18,6 +18,8 @@ public class Main {
             case 5:
                 System.out.println("rendang");
                 break;
+            default:
+                System.out.println("Menu tidak ada");
         }
     }
 }
