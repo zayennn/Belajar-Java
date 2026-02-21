@@ -7,7 +7,7 @@ public class Main {
         System.out.print("masukan nilai kamu : ");
         int nilai = input.nextInt();
 
-        if (nilai < 0 || nilai >= 100) {
+        if (nilai < 0 || nilai > 100) {
             System.out.println("nilai tidak valid, nilai hanya boleh 0 - 100");
         } else if (nilai > 90) {
             System.out.println("A");
