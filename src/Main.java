@@ -82,7 +82,6 @@ public class Main {
         }
     }
 
-    // ===== WHILE + DO WHILE DEMO =====
     static void loopDemo() {
         System.out.println("=== LOOP DEMO ===");
 
