@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/01 — Fundamental Java/01 — Fundamental Java.iml" filepath="$PROJECT_DIR$/01 — Fundamental Java/01 — Fundamental Java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/01 — Fundamental Java/1. Program Java pertama/1. Program Java pertama.iml" filepath="$PROJECT_DIR$/01 — Fundamental Java/1. Program Java pertama/1. Program Java pertama.iml" />
+      <module fileurl="file://$PROJECT_DIR$/01 — Fundamental Java/2. Variabel/2. Variabel.iml" filepath="$PROJECT_DIR$/01 — Fundamental Java/2. Variabel/2. Variabel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Belajar Java - GPT.iml" filepath="$PROJECT_DIR$/Belajar Java - GPT.iml" />
+    </modules>
+  </component>
+</project>
