@@ -4,7 +4,6 @@ public class Main {
 
     static Scanner in = new Scanner(System.in);
 
-    // ===== LEVEL 1 STYLE OUTPUT =====
     static void intro() {
         System.out.println("=== PROGRAM LATIHAN JAVA LEVEL 1 - 4 ===");
         System.out.print("Masukkan nama: ");
