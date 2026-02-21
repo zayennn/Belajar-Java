@@ -37,6 +37,12 @@ public class Main {
         }
     }
 
+    public static void miniProject(int n) {
+        for (int i = 1; i <= 10; i++) {
+            System.out.printf("%d x %d = %d\n", n, i, n * i);
+        }
+    }
+
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
@@ -45,23 +51,30 @@ public class Main {
 //        int angka = input.nextInt();
 //
 //        latihan1(angka);
-
-//        latihan 2
+//
+////        latihan 2
 //        System.out.print("masukan angka yang ingin dijumlahkan 1 - n : ");
 //        int angka2 = input.nextInt();
 //
 //        latihan2(angka2);
-
-
-//        latihan 3
+//
+//
+////        latihan 3
 //        int com = (int) (Math.random() * 10) + 1;
 //        latihan3(com);
-
-//        latihan 4
+//
+////        latihan 4
 //        for (int i = 1; i <= 20; i++) {
 //            if (i % 2 == 0) {
 //                System.out.println(i);
 //            }
 //        }
+
+//        mini project
+        System.out.print("masukan angka table perkalian : ");
+        int angka3 = input.nextInt();
+        miniProject(angka3);
+
+
     }
 }
