@@ -7,3 +7,10 @@ public class Main {
         }
     }
 }
+
+//  if (kondisi) {
+//      aksi;
+//  }
+
+//  Kalau kondisi true → jalan
+//  Kalau false → skip
