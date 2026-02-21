@@ -25,7 +25,6 @@ public class Main {
         System.out.println();
     }
 
-    // ===== LEVEL 3 STYLE LOGIC =====
     static void penilaian() {
         System.out.println("=== KONVERSI NILAI ===");
         System.out.print("Masukkan nilai (0-100): ");
