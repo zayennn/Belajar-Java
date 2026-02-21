@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
 public class Main {
-    public static String latihan(String[] args) {
-
+    public static String latihan(String nama, int umur) {
+        return String.format("halo %s, umur kamu %d", nama, umur);
     }
 
     public static void main(String[] args) {
@@ -11,7 +11,12 @@ public class Main {
         System.out.print("masukan nama kamu: ");
         String nama = input.nextLine();
 
-        System.out.println("halo " + nama);
+        System.out.print("masukan umur kamu: ");
+        int umur = input.nextInt();
+
+        String mahasiswa = latihan(nama, umur);
+
+        System.out.print(mahasiswa);
     }
 }
 
