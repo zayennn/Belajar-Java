@@ -17,9 +17,7 @@ public class Main {
         System.out.println(total);
     }
 
-    public static void latihan3(int com) {
-        Scanner input = new Scanner(System.in);
-
+    public static void latihan3(int com, Scanner input) {
         while (true) {
             System.out.print("masukan angka tebakan mu (1 - 10) : ");
             int user_choice = input.nextInt();
@@ -47,28 +45,28 @@ public class Main {
         Scanner input = new Scanner(System.in);
 
 //        latihan 1
-//        System.out.print("masukan banyak angka yang ingin di cetak : ");
-//        int angka = input.nextInt();
-//
-//        latihan1(angka);
-//
-////        latihan 2
-//        System.out.print("masukan angka yang ingin dijumlahkan 1 - n : ");
-//        int angka2 = input.nextInt();
-//
-//        latihan2(angka2);
-//
-//
-////        latihan 3
-//        int com = (int) (Math.random() * 10) + 1;
-//        latihan3(com);
-//
-////        latihan 4
-//        for (int i = 1; i <= 20; i++) {
-//            if (i % 2 == 0) {
-//                System.out.println(i);
-//            }
-//        }
+        System.out.print("masukan banyak angka yang ingin di cetak : ");
+        int angka = input.nextInt();
+
+        latihan1(angka);
+
+//        latihan 2
+        System.out.print("masukan angka yang ingin dijumlahkan 1 - n : ");
+        int angka2 = input.nextInt();
+
+        latihan2(angka2);
+
+
+//        latihan 3
+        int com = (int) (Math.random() * 10) + 1;
+        latihan3(com, input);
+
+//        latihan 4
+        for (int i = 2; i <= 20; i += 2) {
+            if (i % 2 == 0) {
+                System.out.println(i);
+            }
+        }
 
 //        mini project
         System.out.print("masukan angka table perkalian : ");
