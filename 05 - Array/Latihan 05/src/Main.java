@@ -11,13 +11,13 @@ public class Main {
 //        }
 
 //        Latihan 2 — jumlah semua isi array
-//        int total = 0;
-//
-//        for (int i = 0; i < arr.length; i++) {
-//            total += arr[i];
-//        }
-//
-//        System.out.println(total);
+        int total = 0;
+
+        for (int i = 0; i < arr.length; i++) {
+            total += arr[i];
+        }
+
+        System.out.println(total);
 
 //        Latihan 3 — cari nilai terbesar
         int[] arr2 = {3, 9, 2, 15, 7};
