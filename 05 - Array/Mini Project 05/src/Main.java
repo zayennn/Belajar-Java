@@ -10,6 +10,7 @@ public class Main {
         int[] nilai = new int[jumlah_siswa];
         int max = 0;
         int min = 100;
+        int jum_nilai = 0;
 
         for (int i = 0; i < jumlah_siswa; i++) {
             System.out.println("masukan nilai mahasiswa ke - " + (i + 1) + " : ");
@@ -27,7 +28,12 @@ public class Main {
             }
         }
 
-        System.out.println("\nnilai terbesar : " + max);
-        System.out.println("nilai terkecil : " + min);
+//        System.out.println("\nnilai terbesar : " + max);
+//        System.out.println("nilai terkecil : " + min);
+
+        for (int i = 0; i < jumlah_siswa; i++) {
+            jum_nilai += nilai[i];
+
+        }
     }
 }
