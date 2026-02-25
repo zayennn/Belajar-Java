@@ -67,13 +67,16 @@ status       : %s
             System.out.print("masukan nilai mahasiswa ke - %f : ");
             int nilai = input.nextInt();
         }
+        for (int i = 0; i < jum_siswa; i++) {
+            System.out.printf("mahasiswa ke - %d memiliki nilai = ", nilai_tiap_siswa[i]);
+        }
     }
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
 //        soal ketiga :
-        System.out.println("masukan jumlah mahasiswa : ");
+        System.out.print("masukan jumlah mahasiswa : ");
         int jum_mahasiswa = input.nextInt();
 
         soalKetiga(jum_mahasiswa, input);
