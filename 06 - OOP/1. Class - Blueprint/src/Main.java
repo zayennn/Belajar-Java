@@ -1,7 +1,7 @@
 public class Main {
     public class Mahasiswa {
-        String nama;
-        int umur;
+        String nama; // field / attribute
+        int umur; // field / attribute
     }
 }
 // ini belum bikin mahasiswa ( cuma template )
