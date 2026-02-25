@@ -1,8 +1,8 @@
 public class Main{
     class Mobil {
-        private String nama;
-        private int tahun;
-        private String warna;
+        String nama;
+        int tahun;
+        String warna;
 
         String infoMobil() {
             return String.format("""
