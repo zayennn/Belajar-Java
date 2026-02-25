@@ -102,13 +102,21 @@ jumlah mahasiswa nilai ditas rata-rata  : %d
                 """. formatted(nilai_tertinggi, nilai_terkecil, nilai_rata_rata, jumlah_mahasiswa_diatas_rata_rata));
     }
 
+    public static void soalKeempat(int com, Scanner input) {
+        int kesempatan_user = 5;
+
+        while (kesempatan_user > 0) {
+            System.out.print("masukan tebakan kamu 1-100 : ");
+
+        }
+    }
+
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-//        soal ketiga :
-        System.out.print("masukan jumlah mahasiswa : ");
-        int jum_mahasiswa = input.nextInt();
+//        soal keempat :
+        int com = (int) (Math.random() * 100) + 1;
 
-        soalKetiga(jum_mahasiswa, input);
+        soalKeempat(com, input);
     }
 }
