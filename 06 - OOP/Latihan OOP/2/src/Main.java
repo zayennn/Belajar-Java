@@ -22,13 +22,13 @@ public class Main {
         System.out.printf("""
 panjang persegi adalah                : %d
 lebar persegi adalah                  : %d
-total keliling persegi panjang nya adalah : %d
+total keliling persegi nya adalah : %d
                 """, pp.panjang, pp.lebar, pp.hitungKeliling());
         System.out.printf("""
 
 panjang persegi adalah                : %d
 lebar persegi adalah                  : %d
-total luas persegi panjang nya adalah : %d
+total luas persegi nya adalah : %d
                 """, pp.panjang, pp.lebar, pp.hitungLuas());
     }
 }
