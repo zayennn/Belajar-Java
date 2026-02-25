@@ -33,7 +33,8 @@ public class Main {
 
         for (int i = 0; i < jumlah_siswa; i++) {
             jum_nilai += nilai[i];
-
         }
+
+
     }
 }
