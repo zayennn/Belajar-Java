@@ -95,27 +95,71 @@ public class Main {
 
         System.out.printf("""
                 
-nilai tertinggi mahasiswa               : %.2f
-nilai terkecil mahasiswa                : %.2f
-rata rata nilai tiap mahasiswa          : %.2f
-jumlah mahasiswa nilai ditas rata-rata  : %d
-                """. formatted(nilai_tertinggi, nilai_terkecil, nilai_rata_rata, jumlah_mahasiswa_diatas_rata_rata));
+                nilai tertinggi mahasiswa               : %.2f
+                nilai terkecil mahasiswa                : %.2f
+                rata rata nilai tiap mahasiswa          : %.2f
+                jumlah mahasiswa nilai ditas rata-rata  : %d
+                """.formatted(nilai_tertinggi, nilai_terkecil, nilai_rata_rata, jumlah_mahasiswa_diatas_rata_rata));
     }
 
     public static void soalKeempat(int com, Scanner input) {
         int kesempatan_user = 5;
 
-        while (kesempatan_user > 0) {
-            System.out.print("masukan tebakan kamu 1-100 : ");
+        System.out.println("tebak angka dari 1 - 100");
 
+        while (kesempatan_user > 0) {
+            System.out.print("\nmasukan tebakan kamu 1-100 : ");
+            int tebakan_user = input.nextInt();
+
+            if (tebakan_user != com) {
+                kesempatan_user--;
+                System.out.println("tebakan mu salah, sisa kesempatanmu tersisa : " + kesempatan_user);
+
+                if (tebakan_user >= com) {
+                    System.out.println("pilihan mu terlalu besar");
+                } else {
+                    System.out.println("pilihanmu terlalu kecil");
+                }
+
+                if (kesempatan_user == 0) {
+                    System.out.println("kesempatanmu sudah habis");
+                    System.out.println("jawaban yang benar adalah : " + com);
+                }
+
+            } else {
+                System.out.println("selamat tebakanmu benar");
+                System.out.println("sisa kesempatan mu : " + kesempatan_user);
+                break;
+            }
         }
     }
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
+//        soal pertama :
+        System.out.print("masukan nama anda : ");
+        String nama = input.nextLine();
+
+        System.out.print("masukan umur anda : ");
+        int umur = input.nextInt();
+
+        System.out.print("masukan tinggi anda : ");
+        double tinggi = input.nextDouble();
+
+        soalPertama(nama, umur, tinggi);
+
+//        soal kedua :
+        soalKedua(input);
+
+//        soal ketiga :
+        System.out.print("masukan jumlah mahasiswa : ");
+        int jum_mahasiswa = input.nextInt();
+
+        soalKetiga(jum_mahasiswa, input);
+
 //        soal keempat :
-        int com = (int) (Math.random() * 100) + 1;
+        int com = (int) (Math.random() * 10) + 1;
 
         soalKeempat(com, input);
     }
