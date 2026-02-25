@@ -65,6 +65,7 @@ public class Main {
         double nilai_tertinggi = Integer.MIN_VALUE;
         double nilai_terkecil = Integer.MAX_VALUE;
 
+        int jumlah_mahasiswa_diatas_rata_rata = 0;
 
         for (int i = 0; i < jum_siswa; i++) {
             System.out.printf("masukan nilai mahasiswa ke - %d : ", (i + 1));
@@ -79,12 +80,26 @@ public class Main {
             if (nilai_tiap_siswa[i] < nilai_terkecil) {
                 nilai_terkecil = nilai_tiap_siswa[i];
             }
+
+            total_nilai += nilai_tiap_siswa[i];
+
         }
 
-        System.out.println("");
+        double nilai_rata_rata = total_nilai / nilai_tiap_siswa.length;
 
-        System.out.println("nilai tertinggi = " + nilai_tertinggi);
-        System.out.println("nilai terkecil = " + nilai_terkecil);
+        for (int i = 0; i < nilai_tiap_siswa.length; i++) {
+            if (nilai_tiap_siswa[i] > nilai_rata_rata) {
+                jumlah_mahasiswa_diatas_rata_rata++;
+            }
+        }
+
+        System.out.printf("""
+                
+nilai tertinggi mahasiswa               : %.2f
+nilai terkecil mahasiswa                : %.2f
+rata rata nilai tiap mahasiswa          : %.2f
+jumlah mahasiswa nilai ditas rata-rata  : %d
+                """. formatted(nilai_tertinggi, nilai_terkecil, nilai_rata_rata, jumlah_mahasiswa_diatas_rata_rata));
     }
 
     public static void main(String[] args) {
