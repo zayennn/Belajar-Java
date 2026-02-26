@@ -19,9 +19,9 @@ public class Main{
 
     public static void main(String[] args) {
         Kendaraan[] daftar = {
-                new Mobil();
-                new Motor();
-        }
+                new Mobil(),
+                new Motor()
+        };
 
         for (Kendaraan k : daftar) {
             k.suara();
