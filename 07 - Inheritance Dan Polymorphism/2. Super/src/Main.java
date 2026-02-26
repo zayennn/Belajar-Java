@@ -18,6 +18,9 @@ public class Main{
 
         Mobil(String merk, String warna, int pintu) {
             super(merk, warna);
+            this.pintu = pintu;
         }
     }
 }
+
+// super() → panggil constructor parent, kalo parent punya constructor tapi gadipanggil bisa error
