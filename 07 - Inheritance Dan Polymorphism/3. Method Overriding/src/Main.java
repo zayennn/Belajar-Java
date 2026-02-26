@@ -30,3 +30,5 @@ public class Main {
         mobil1.getInfo();
     }
 }
+
+// overriding → Child bisa mengganti perilaku parent (method parent “ditimpa”)
