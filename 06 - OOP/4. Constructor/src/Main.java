@@ -6,6 +6,9 @@ public class Main {
         Mahasiswa(String nama, int umur) {
             this.nama = nama;
             this.umur = umur;
+
+//            this.nama/umur → field class
+//            = nama/umur → parameter constructor
         }
 
         void tampilkan() {
