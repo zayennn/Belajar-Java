@@ -18,7 +18,15 @@ public class Main {
             super(merk);
             this.pintu = pintu;
         }
+
+        @Override
+        void getInfo() {
+            System.out.println("mobil " + merk + " dengan " + pintu + " pintu");
+        }
     }
 
-
+    public static void main(String[] args) {
+        Mobil mobil1 = new Mobil("bmw", 4);
+        mobil1.getInfo();
+    }
 }
