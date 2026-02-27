@@ -66,6 +66,7 @@ total gaji    : %s
 
             return String.format("""
 nama       : %s
+kerjaan    : manager
 gaji pokok : %s
 tunjangan  : %s
 bonus tim  : %s
@@ -75,6 +76,7 @@ total gaji : %s
                     nama,
                     formatRupiah.format(gaji),
                     formatRupiah.format(tunjangan),
+                    formatRupiah.format(bonus_tim),
                     formatRupiah.format(total_gaji));
         }
     }
