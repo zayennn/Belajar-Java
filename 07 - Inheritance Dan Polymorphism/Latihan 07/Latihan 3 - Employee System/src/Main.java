@@ -11,8 +11,8 @@ public class Main {
             this.gaji = gaji;
         }
 
-        private static final Locale indonesia = new Locale("id", "ID");
-        private static final NumberFormat formatRupiah;
+        public static final Locale indonesia = new Locale("id", "ID");
+        public static final NumberFormat formatRupiah;
 
         static {
             formatRupiah = NumberFormat.getCurrencyInstance(indonesia);
@@ -35,16 +35,54 @@ public class Main {
 
         @Override
         String getHitungGaji() {
+            int totalGaji = gaji + bonus_project;
+            return String.format("""
+nama          : %s
+gaji pokok    : %s
+bonus project : %s
+========================== +
+total gaji    : %s
+""",
+                    nama,
+                    formatRupiah.format(gaji),
+                    formatRupiah.format(totalGaji));
+        }
+    }
+
+    static class Manager extends Employee {
+        int tunjangan;
+        int bonus_tim;
+
+        Manager(String nama, int gaji, int tunjangan, int bonus_tim) {
+            super(nama, gaji);
+            this.tunjangan = tunjangan;
+            this.bonus_tim = bonus_tim;
+        }
+
+        @Override
+        String getHitungGaji() {
+            int total_gaji = gaji + tunjangan + bonus_tim;
+
             return String.format("""
 nama       : %s
-gaji pokok : %d
-total gaji : %d
-                    """, nama, gaji, (gaji += bonus_project));
+gaji pokok : %s
+tunjangan  : %s
+bonus tim  : %s
+========================== +
+total gaji : %s
+                    """,
+                    nama,
+                    formatRupiah.format(gaji),
+                    formatRupiah.format(tunjangan),
+                    formatRupiah.format(total_gaji));
         }
     }
 
     public static void main(String[] args) {
         Programmer programmer = new Programmer("capypoter", 100000, 50000);
         System.out.println(programmer.getHitungGaji());
+
+        Manager manager = new Manager("capytanic", 100000, 50000, 800000);
+        System.out.println(manager.getHitungGaji());
     }
 }
