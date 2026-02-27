@@ -83,10 +83,18 @@ total gaji : %s
     }
 
     public static void main(String[] args) {
-        Programmer programmer = new Programmer("capypoter", 100000, 50000);
-        System.out.println(programmer.getHitungGaji());
+        Employee[] daftar = new Employee[3];
 
-        Manager manager = new Manager("capytanic", 100000, 50000, 800000);
-        System.out.println(manager.getHitungGaji());
+        Manager manager = new Manager("capyking", 2000000, 1000000, 500000);
+        Programmer programmer1 = new Programmer("capytanic", 1000000, 500000);
+        Programmer programmer2 = new Programmer("capypoter", 1000000, 350000);
+
+        daftar[0] = manager;
+        daftar[1] = programmer1;
+        daftar[2] = programmer2;
+
+        for (Employee karyawan : daftar) {
+            System.out.println(karyawan.getHitungGaji());
+        }
     }
 }
