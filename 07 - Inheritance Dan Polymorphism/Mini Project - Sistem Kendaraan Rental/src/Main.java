@@ -40,7 +40,7 @@ class Mobil extends Kendaraan {
 
 merk mobil          : %s
 jumlah pintu mobil  : %d
-harga sewa per hari : %s
+harga sewa per hari : %s -
 disewa selama       : %d hari
 ———————————————————————————————————— ×
 total               : %s -
@@ -64,7 +64,7 @@ class Motor extends Kendaraan {
 
 merk mobil          : %s
 tipe helm           : %s
-harga sewa per hari : %s
+harga sewa per hari : %s -
 disewa selama       : %d hari
 ———————————————————————————————————— ×
 total               : %s -
@@ -109,9 +109,15 @@ public class Main {
                     Mobil sewa_mobil = new Mobil("BMW M4", 3000000, 2);
                     daftar[i] = sewa_mobil;
                 } else if (kode_mobil.equals("MB002")) {
+                    System.out.print("masukan berapa lama anda ingin menyewa mobil / hari : ");
+                    hari = input.nextInt();
+
                     Mobil sewa_mobil = new Mobil("Lamborghini Aventador", 10000000, 2);
                     daftar[i] = sewa_mobil;
                 } else if (kode_mobil.equals("MB003")) {
+                    System.out.print("masukan berapa lama anda ingin menyewa mobil / hari : ");
+                    hari = input.nextInt();
+
                     Mobil sewa_mobil = new Mobil("BMW 3 Series", 2000000, 4);
                     daftar[i] = sewa_mobil;
                 } else {
