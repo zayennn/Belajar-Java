@@ -1,15 +1,107 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
-    public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+import jdk.dynalink.StandardNamespace;
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+import java.util.Locale;
+import java.text.NumberFormat;
+import java.util.Scanner;
+
+abstract class Kendaraan {
+    String merk;
+    int hargaSewaPerHari;
+
+    static final Locale indonesia = new Locale("id", "ID");
+    static final NumberFormat formatRupiah;
+
+    static {
+        formatRupiah = NumberFormat.getCurrencyInstance(indonesia);
+        formatRupiah.setMaximumFractionDigits(0);
+        formatRupiah.setMinimumFractionDigits(0);
+    }
+
+    Kendaraan(String merk, int hargaSewaPerHari) {
+        this.merk = merk;
+        this.hargaSewaPerHari = hargaSewaPerHari;
+    }
+
+    abstract void getHargaSewaPerHari(int hari);
+}
+
+class Mobil extends Kendaraan {
+    int jumlah_pintu;
+
+    Mobil(String merk, int hargaSewaPerHari, int jumlah_pintu) {
+        super(merk, hargaSewaPerHari);
+        this.jumlah_pintu = jumlah_pintu;
+    }
+
+    @Override
+    void getHargaSewaPerHari(int hari) {
+        System.out.printf("""
+merk mobil          : %s
+jumlah pintu mobil  : %d
+harga sewa per hari : %s
+disewa selama       : %d hari
+———————————————————————————————————— ×
+total bayar         : %s
+
+                """, merk, jumlah_pintu, formatRupiah.format(hargaSewaPerHari), hari, formatRupiah.format((hargaSewaPerHari * hari)));
+    }
+}
+
+class Motor extends Kendaraan {
+    String tipe_helm;
+
+    Motor(String merk, int hargaSewaPerHari, String tipe_helm) {
+        super(merk, hargaSewaPerHari);
+        this.tipe_helm = tipe_helm;
+    }
+
+    @Override
+    void getHargaSewaPerHari(int hari) {
+        System.out.printf("""
+merk motor          : %s
+tipe helm           : %s
+harga sewa per hari : %s
+disewa selama       : %d hari
+———————————————————————————————————— ×
+total bayar         : %s
+
+                """, merk, tipe_helm, formatRupiah.format(hargaSewaPerHari), hari, formatRupiah.format((hargaSewaPerHari * hari)));
+    }
+}
+
+public class Main{
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("""
+================= Menu Peminjaman =================
+# Mobil :
+• ( MB001 ) = BMW M4                     |   Rp 3.000.000  / hari   |  2 pintu
+• ( MB002 ) = Lamborghini Aventador      |   Rp 10.000.000 / hari   |  2 pintu
+• ( MB003 ) = BMW 3 Series               |   Rp 2.000.000  / hari   |  4 pintu
+
+# Motor :
+• ( MT001 ) = Kawasaki Ninja H2R         |   Rp 1.000.000  / hari   |  Tipe Helm : Anak Sunmori
+• ( MT002 ) = BMW S1KRR                  |   Rp 2.439.999  / hari   |  Tipe Helm : Anak Sunmori
+• ( MT003 ) = Ducati V4S Superlegerra    |   Rp 3.499.999  / hari   |  Tipe Helm : Anak Sunmori
+ 
+                """);
+
+        System.out.print("masukan jumlah peminjaman : ");
+        int jumlah_peminjaman = input.nextInt();
+
+        Kendaraan[] daftar = new Kendaraan[jumlah_peminjaman];
+
+//        for (int i = 0; i < jumlah_peminjaman; i++) {
+//            System.out.print("pilih kendaraan yang ingin kamu sewa (motor/mobil) : ");
+//        }
+
+//        Mobil mobil1 = new Mobil("BMW M4", 3000000, 2);
+//
+//        daftar[0] = mobil1;
+//
+//        for (Kendaraan kendaraan : daftar) {
+//            kendaraan.getHargaSewaPerHari(3);
+//        }
     }
 }
