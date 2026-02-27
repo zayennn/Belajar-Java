@@ -38,12 +38,12 @@ class Mobil extends Kendaraan {
         int total = hargaSewaPerHari * hari;
         return String.format("""
 
-merk mobil          : %s
-jumlah pintu mobil  : %d
-harga sewa per hari : %s -
-disewa selama       : %d hari
+Merk Mobil          : %s
+Jumlah Pintu Mobil  : %d
+Harga Sewa Per Hari : %s -
+Disewa Selama       : %d hari
 ———————————————————————————————————— ×
-total               : %s -
+Total               : %s -
                 
                 """, merk, jumlah_pintu, formatRupiah.format(hargaSewaPerHari), hari, formatRupiah.format(total));
     }
