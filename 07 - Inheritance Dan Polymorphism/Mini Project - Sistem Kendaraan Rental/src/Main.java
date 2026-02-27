@@ -22,7 +22,7 @@ abstract class Kendaraan {
         this.hargaSewaPerHari = hargaSewaPerHari;
     }
 
-    abstract void getHargaSewaPerHari(int hari);
+    abstract String getHargaSewaPerHari(int hari);
 }
 
 class Mobil extends Kendaraan {
@@ -34,16 +34,18 @@ class Mobil extends Kendaraan {
     }
 
     @Override
-    void getHargaSewaPerHari(int hari) {
-        System.out.printf("""
-                merk mobil          : %s
-                jumlah pintu mobil  : %d
-                harga sewa per hari : %s
-                disewa selama       : %d hari
-                ———————————————————————————————————— ×
-                total bayar         : %s
+    String getHargaSewaPerHari(int hari) {
+        int total = hargaSewaPerHari * hari;
+        return String.format("""
+
+merk mobil          : %s
+jumlah pintu mobil  : %d
+harga sewa per hari : %s
+disewa selama       : %d hari
+———————————————————————————————————— ×
+total               : %s -
                 
-                """, merk, jumlah_pintu, formatRupiah.format(hargaSewaPerHari), hari, formatRupiah.format((hargaSewaPerHari * hari)));
+                """, merk, jumlah_pintu, formatRupiah.format(hargaSewaPerHari), hari, formatRupiah.format(total));
     }
 }
 
@@ -56,16 +58,18 @@ class Motor extends Kendaraan {
     }
 
     @Override
-    void getHargaSewaPerHari(int hari) {
-        System.out.printf("""
-                merk motor          : %s
-                tipe helm           : %s
-                harga sewa per hari : %s
-                disewa selama       : %d hari
-                ———————————————————————————————————— ×
-                total bayar         : %s
+    String getHargaSewaPerHari(int hari) {
+        int total = hargaSewaPerHari * hari;
+        return String.format("""
+
+merk mobil          : %s
+tipe helm           : %s
+harga sewa per hari : %s
+disewa selama       : %d hari
+———————————————————————————————————— ×
+total               : %s -
                 
-                """, merk, tipe_helm, formatRupiah.format(hargaSewaPerHari), hari, formatRupiah.format((hargaSewaPerHari * hari)));
+                """, merk, tipe_helm, formatRupiah.format(hargaSewaPerHari), hari, formatRupiah.format(total));
     }
 }
 
@@ -78,6 +82,7 @@ public class Main {
         input.nextLine();
 
         Kendaraan[] daftar = new Kendaraan[jumlah_peminjaman];
+        int hari = 0;
 
         for (int i = 0; i < jumlah_peminjaman; i++) {
             System.out.print("pilih kendaraan yang ingin anda sewa (mobil/motor) : ");
@@ -98,13 +103,16 @@ public class Main {
                 String kode_mobil = input.nextLine().toUpperCase();
 
                 if (kode_mobil.equals("MB001")) {
+                    System.out.print("masukan berapa lama anda ingin menyewa mobil / hari : ");
+                    hari = input.nextInt();
+
                     Mobil sewa_mobil = new Mobil("BMW M4", 3000000, 2);
                     daftar[i] = sewa_mobil;
                 } else if (kode_mobil.equals("MB002")) {
                     Mobil sewa_mobil = new Mobil("Lamborghini Aventador", 10000000, 2);
                     daftar[i] = sewa_mobil;
                 } else if (kode_mobil.equals("MB003")) {
-                    Mobil sewa_mobil = new Mobil("BMW 3 Series", 10000000, 2);
+                    Mobil sewa_mobil = new Mobil("BMW 3 Series", 2000000, 4);
                     daftar[i] = sewa_mobil;
                 } else {
                     throw new IllegalArgumentException("tidak ada kode mobil yang anda maksud...");
@@ -113,8 +121,8 @@ public class Main {
             }
         }
 
-        for (Kendaraan sewa : daftar) {
-            System.out.println(sewa);
+        for (Kendaraan kendaraan : daftar) {
+            System.out.println(kendaraan.getHargaSewaPerHari(hari));
         }
     }
 }
