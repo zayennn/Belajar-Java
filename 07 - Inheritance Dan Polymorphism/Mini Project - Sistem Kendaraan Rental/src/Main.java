@@ -91,38 +91,40 @@ public class Main {
                 System.out.print("""
 ================= Menu Peminjaman =================
 # Mobil :
-• ( MB001 ) = BMW M4                     |   Rp 3.000.000  / hari   |  2 pintu
-• ( MB002 ) = Lamborghini Aventador      |   Rp 10.000.000 / hari   |  2 pintu
-• ( MB003 ) = BMW 3 Series               |   Rp 2.000.000  / hari   |  4 pintu
+1. ( MB001 ) = BMW M4                     |   Rp 3.000.000  / hari   |  2 pintu
+2. ( MB002 ) = Lamborghini Aventador      |   Rp 10.000.000 / hari   |  2 pintu
+3. ( MB003 ) = BMW 3 Series               |   Rp 2.000.000  / hari   |  4 pintu
 
                 """);
 
-                System.out.print("pilih mobil yang ingin anda sewa (gunakan kode mobil yang ada di dalam '()' : ");
-                String kode_mobil = input.nextLine().toUpperCase();
+                Mobil sewa_mobil;
 
-                if (kode_mobil.equals("MB001")) {
-                    System.out.print("masukan berapa lama anda ingin menyewa mobil / hari : ");
-                    hari[i] = input.nextInt();
-                    input.nextLine();
+                System.out.print("pilih mobil menggunakan menu (1/2/3) : ");
+                int menu = input.nextInt();
 
-                    Mobil sewa_mobil = new Mobil("BMW M4", 3000000, 2);
-                    daftar[i] = sewa_mobil;
-                } else if (kode_mobil.equals("MB002")) {
-                    System.out.print("masukan berapa lama anda ingin menyewa mobil / hari : ");
-                    hari[i] = input.nextInt();
+                switch (menu) {
+                    case 1 :
+                        System.out.print("masukan berapa lama anda ingin menyewa mobil / hari : ");
+                        hari[i] = input.nextInt();
+                        input.nextLine();
 
-                    Mobil sewa_mobil = new Mobil("Lamborghini Aventador", 10000000, 2);
-                    daftar[i] = sewa_mobil;
-                } else if (kode_mobil.equals("MB003")) {
-                    System.out.print("masukan berapa lama anda ingin menyewa mobil / hari : ");
-                    hari[i] = input.nextInt();
+                        sewa_mobil = new Mobil("BMW M4", 3000000, 2);
+                        daftar[i] = sewa_mobil;
+                    case 2 :
+                        System.out.print("masukan berapa lama anda ingin menyewa mobil / hari : ");
+                        hari[i] = input.nextInt();
+                        input.nextLine();
 
-                    Mobil sewa_mobil = new Mobil("BMW 3 Series", 2000000, 4);
-                    daftar[i] = sewa_mobil;
-                } else {
-                    throw new IllegalArgumentException("tidak ada kode mobil yang anda maksud...");
+                        sewa_mobil = new Mobil("Lamborghini Aventador", 10000000, 2);
+                        daftar[i] = sewa_mobil;
+                    case 3 :
+                        System.out.print("masukan berapa lama anda ingin menyewa mobil / hari : ");
+                        hari[i] = input.nextInt();
+                        input.nextLine();
+
+                        sewa_mobil = new Mobil("BMW 3 Series", 2000000, 4);
+                        daftar[i] = sewa_mobil;
                 }
-
             }
         }
 
