@@ -73,7 +73,14 @@ public class Main{
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
+        System.out.print("masukan jumlah peminjaman : ");
+        int jumlah_peminjaman = input.nextInt();
+        input.nextLine();
+
+        Kendaraan[] daftar = new Kendaraan[jumlah_peminjaman];
+
         System.out.print("""
+
 ================= Menu Peminjaman =================
 # Mobil :
 • ( MB001 ) = BMW M4                     |   Rp 3.000.000  / hari   |  2 pintu
@@ -87,21 +94,14 @@ public class Main{
  
                 """);
 
-        System.out.print("masukan jumlah peminjaman : ");
-        int jumlah_peminjaman = input.nextInt();
-
-        Kendaraan[] daftar = new Kendaraan[jumlah_peminjaman];
+            System.out.print("pilih kendaraan yang ingin kamu sewa (motor/mobil) : ");
+            String menu_user = input.nextLine().toLowerCase();
 
 //        for (int i = 0; i < jumlah_peminjaman; i++) {
-//            System.out.print("pilih kendaraan yang ingin kamu sewa (motor/mobil) : ");
-//        }
-
-//        Mobil mobil1 = new Mobil("BMW M4", 3000000, 2);
 //
-//        daftar[0] = mobil1;
-//
-//        for (Kendaraan kendaraan : daftar) {
-//            kendaraan.getHargaSewaPerHari(3);
+////            if (menu_user == "motor") {
+////
+////            }
 //        }
     }
 }
