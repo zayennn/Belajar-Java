@@ -97,8 +97,24 @@ public class Main {
                 System.out.print("pilih mobil yang ingin anda sewa (gunakan kode mobil yang ada di dalam '()' : ");
                 String kode_mobil = input.nextLine().toUpperCase();
 
+                if (kode_mobil.equals("MB001")) {
+                    Mobil sewa_mobil = new Mobil("BMW M4", 3000000, 2);
+                    daftar[i] = sewa_mobil;
+                } else if (kode_mobil.equals("MB002")) {
+                    Mobil sewa_mobil = new Mobil("Lamborghini Aventador", 10000000, 2);
+                    daftar[i] = sewa_mobil;
+                } else if (kode_mobil.equals("MB003")) {
+                    Mobil sewa_mobil = new Mobil("BMW 3 Series", 10000000, 2);
+                    daftar[i] = sewa_mobil;
+                } else {
+                    throw new IllegalArgumentException("tidak ada kode mobil yang anda maksud...");
+                }
 
             }
+        }
+
+        for (Kendaraan sewa : daftar) {
+            System.out.println(sewa);
         }
     }
 }
