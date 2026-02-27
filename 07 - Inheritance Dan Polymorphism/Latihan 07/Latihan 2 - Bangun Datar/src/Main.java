@@ -10,7 +10,6 @@ public class Main{
             this.sisi = sisi;
         }
 
-        @Override
         double getHitungLuas() {
             return sisi * sisi;
         }
@@ -23,7 +22,6 @@ public class Main{
             this.jari_jari = jari_jari;
         }
 
-        @Override
         double getHitungLuas() {
             return Math.PI * jari_jari * jari_jari;
         }
@@ -31,6 +29,9 @@ public class Main{
 
     public static void main(String[] args) {
         Persegi sisi = new Persegi(20);
+        Lingkaran jari_jari = new Lingkaran(10);
+
         System.out.println(sisi.getHitungLuas());
+        System.out.println(jari_jari.getHitungLuas());
     }
 }
