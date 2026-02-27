@@ -25,8 +25,26 @@ public class Main {
         }
     }
 
+    static class Programmer extends Employee {
+        int bonus_project;
+
+        Programmer(String nama, int gaji, int bonus_project) {
+            super(nama, gaji);
+            this.bonus_project = bonus_project;
+        }
+
+        @Override
+        String getHitungGaji() {
+            return String.format("""
+nama       : %s
+gaji pokok : %d
+total gaji : %d
+                    """, nama, gaji, (gaji += bonus_project));
+        }
+    }
+
     public static void main(String[] args) {
-        Employee programmer = new Employee("capypoter", 100000);
-        System.out.printf("nama : %s, gaji : %s", programmer.nama, programmer.getHitungGaji());
+        Programmer programmer = new Programmer("capypoter", 100000, 50000);
+        System.out.println(programmer.getHitungGaji());
     }
 }
