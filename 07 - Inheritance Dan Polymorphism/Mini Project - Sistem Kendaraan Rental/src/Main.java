@@ -61,7 +61,6 @@ class Motor extends Kendaraan {
     String getHargaSewaPerHari(int hari) {
         int total = hargaSewaPerHari * hari;
         return String.format("""
-
 merk mobil          : %s
 tipe helm           : %s
 harga sewa per hari : %s -
@@ -82,7 +81,7 @@ public class Main {
         input.nextLine();
 
         Kendaraan[] daftar = new Kendaraan[jumlah_peminjaman];
-        int hari = 0;
+        int[] hari = new int[jumlah_peminjaman];
 
         for (int i = 0; i < jumlah_peminjaman; i++) {
             System.out.print("pilih kendaraan yang ingin anda sewa (mobil/motor) : ");
@@ -90,7 +89,6 @@ public class Main {
 
             if (menu_user.equals("mobil")) {
                 System.out.print("""
-
 ================= Menu Peminjaman =================
 # Mobil :
 • ( MB001 ) = BMW M4                     |   Rp 3.000.000  / hari   |  2 pintu
@@ -104,20 +102,20 @@ public class Main {
 
                 if (kode_mobil.equals("MB001")) {
                     System.out.print("masukan berapa lama anda ingin menyewa mobil / hari : ");
-                    hari = input.nextInt();
+                    hari[i] = input.nextInt();
                     input.nextLine();
 
                     Mobil sewa_mobil = new Mobil("BMW M4", 3000000, 2);
                     daftar[i] = sewa_mobil;
                 } else if (kode_mobil.equals("MB002")) {
                     System.out.print("masukan berapa lama anda ingin menyewa mobil / hari : ");
-                    hari = input.nextInt();
+                    hari[i] = input.nextInt();
 
                     Mobil sewa_mobil = new Mobil("Lamborghini Aventador", 10000000, 2);
                     daftar[i] = sewa_mobil;
                 } else if (kode_mobil.equals("MB003")) {
                     System.out.print("masukan berapa lama anda ingin menyewa mobil / hari : ");
-                    hari = input.nextInt();
+                    hari[i] = input.nextInt();
 
                     Mobil sewa_mobil = new Mobil("BMW 3 Series", 2000000, 4);
                     daftar[i] = sewa_mobil;
@@ -128,8 +126,10 @@ public class Main {
             }
         }
 
+        int counter = 0;
         for (Kendaraan kendaraan : daftar) {
-            System.out.println(kendaraan.getHargaSewaPerHari(hari));
+            System.out.println(kendaraan.getHargaSewaPerHari(hari[counter]));
+            counter++;
         }
     }
 }
