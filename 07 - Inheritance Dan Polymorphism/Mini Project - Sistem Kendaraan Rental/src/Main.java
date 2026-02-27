@@ -93,19 +93,11 @@ public class Main {
 • ( MB003 ) = BMW 3 Series               |   Rp 2.000.000  / hari   |  4 pintu
 
                 """);
-            } else if (menu_user.equals("motor")) {
-                System.out.print("""
 
-================= Menu Peminjaman =================
+                System.out.print("pilih mobil yang ingin anda sewa (gunakan kode mobil yang ada di dalam '()' : ");
+                String kode_mobil = input.nextLine().toUpperCase();
 
-# Motor :
-• ( MT001 ) = Kawasaki Ninja H2R         |   Rp 1.000.000  / hari   |  Tipe Helm : Anak Sunmori
-• ( MT002 ) = BMW S1KRR                  |   Rp 2.439.999  / hari   |  Tipe Helm : Anak Sunmori
-• ( MT003 ) = Ducati V4S Superlegerra    |   Rp 3.499.999  / hari   |  Tipe Helm : Anak Sunmori
- 
-                """);
 
-                System.out.print("pilih kendaraan yang ingin kamu sewa (motor/mobil) : ");
             }
         }
     }
