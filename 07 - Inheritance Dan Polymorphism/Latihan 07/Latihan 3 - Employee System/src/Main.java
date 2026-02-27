@@ -37,14 +37,15 @@ public class Main {
         String getHitungGaji() {
             int totalGaji = gaji + bonus_project;
             return String.format("""
-nama          : %s
-gaji pokok    : %s
-bonus project : %s
-========================== +
-total gaji    : %s
-""",
+                            nama          : %s
+                            gaji pokok    : %s
+                            bonus project : %s
+                            ========================== +
+                            total gaji    : %s
+                            """,
                     nama,
                     formatRupiah.format(gaji),
+                    formatRupiah.format(bonus_project),
                     formatRupiah.format(totalGaji));
         }
     }
@@ -57,24 +58,8 @@ total gaji    : %s
             super(nama, gaji);
             this.tunjangan = tunjangan;
             this.bonus_tim = bonus_tim;
-        }
 
-        @Override
-        String getHitungGaji() {
-            int total_gaji = gaji + tunjangan + bonus_tim;
 
-            return String.format("""
-nama       : %s
-gaji pokok : %s
-tunjangan  : %s
-bonus tim  : %s
-========================== +
-total gaji : %s
-                    """,
-                    nama,
-                    formatRupiah.format(gaji),
-                    formatRupiah.format(tunjangan),
-                    formatRupiah.format(total_gaji));
         }
     }
 
