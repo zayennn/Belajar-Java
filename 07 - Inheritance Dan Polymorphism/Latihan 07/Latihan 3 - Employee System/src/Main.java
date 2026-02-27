@@ -38,6 +38,7 @@ public class Main {
             int totalGaji = gaji + bonus_project;
             return String.format("""
 nama          : %s
+kerjaan       : programmer
 gaji pokok    : %s
 bonus project : %s
 ========================== +
