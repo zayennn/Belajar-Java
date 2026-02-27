@@ -36,13 +36,13 @@ class Mobil extends Kendaraan {
     @Override
     void getHargaSewaPerHari(int hari) {
         System.out.printf("""
-merk mobil          : %s
-jumlah pintu mobil  : %d
-harga sewa per hari : %s
-disewa selama       : %d hari
-———————————————————————————————————— ×
-total bayar         : %s
-
+                merk mobil          : %s
+                jumlah pintu mobil  : %d
+                harga sewa per hari : %s
+                disewa selama       : %d hari
+                ———————————————————————————————————— ×
+                total bayar         : %s
+                
                 """, merk, jumlah_pintu, formatRupiah.format(hargaSewaPerHari), hari, formatRupiah.format((hargaSewaPerHari * hari)));
     }
 }
@@ -58,50 +58,30 @@ class Motor extends Kendaraan {
     @Override
     void getHargaSewaPerHari(int hari) {
         System.out.printf("""
-merk motor          : %s
-tipe helm           : %s
-harga sewa per hari : %s
-disewa selama       : %d hari
-———————————————————————————————————— ×
-total bayar         : %s
-
+                merk motor          : %s
+                tipe helm           : %s
+                harga sewa per hari : %s
+                disewa selama       : %d hari
+                ———————————————————————————————————— ×
+                total bayar         : %s
+                
                 """, merk, tipe_helm, formatRupiah.format(hargaSewaPerHari), hari, formatRupiah.format((hargaSewaPerHari * hari)));
     }
 }
 
-public class Main{
+public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
         System.out.print("masukan jumlah peminjaman : ");
         int jumlah_peminjaman = input.nextInt();
-        input.nextLine();
 
         Kendaraan[] daftar = new Kendaraan[jumlah_peminjaman];
 
-        System.out.print("""
+        System.out.print("pilih kendaraan yang ingin anda sewa (motor/mobil) : ");
+        String menu_user = input.nextLine();
 
-================= Menu Peminjaman =================
-# Mobil :
-• ( MB001 ) = BMW M4                     |   Rp 3.000.000  / hari   |  2 pintu
-• ( MB002 ) = Lamborghini Aventador      |   Rp 10.000.000 / hari   |  2 pintu
-• ( MB003 ) = BMW 3 Series               |   Rp 2.000.000  / hari   |  4 pintu
+        System.out.println(menu_user);
 
-# Motor :
-• ( MT001 ) = Kawasaki Ninja H2R         |   Rp 1.000.000  / hari   |  Tipe Helm : Anak Sunmori
-• ( MT002 ) = BMW S1KRR                  |   Rp 2.439.999  / hari   |  Tipe Helm : Anak Sunmori
-• ( MT003 ) = Ducati V4S Superlegerra    |   Rp 3.499.999  / hari   |  Tipe Helm : Anak Sunmori
- 
-                """);
-
-            System.out.print("pilih kendaraan yang ingin kamu sewa (motor/mobil) : ");
-            String menu_user = input.nextLine().toLowerCase();
-
-//        for (int i = 0; i < jumlah_peminjaman; i++) {
-//
-////            if (menu_user == "motor") {
-////
-////            }
-//        }
     }
 }
