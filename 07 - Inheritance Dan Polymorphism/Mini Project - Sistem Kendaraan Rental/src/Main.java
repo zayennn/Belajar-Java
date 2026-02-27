@@ -110,6 +110,7 @@ public class Main {
 
                         sewa_mobil = new Mobil("BMW M4", 3000000, 2);
                         daftar[i] = sewa_mobil;
+                        break;
                     case 2 :
                         System.out.print("masukan berapa lama anda ingin menyewa mobil / hari : ");
                         hari[i] = input.nextInt();
@@ -117,6 +118,7 @@ public class Main {
 
                         sewa_mobil = new Mobil("Lamborghini Aventador", 10000000, 2);
                         daftar[i] = sewa_mobil;
+                        break;
                     case 3 :
                         System.out.print("masukan berapa lama anda ingin menyewa mobil / hari : ");
                         hari[i] = input.nextInt();
@@ -124,6 +126,7 @@ public class Main {
 
                         sewa_mobil = new Mobil("BMW 3 Series", 2000000, 4);
                         daftar[i] = sewa_mobil;
+                        break;
                 }
             }
         }
