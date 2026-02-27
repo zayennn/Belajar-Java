@@ -91,9 +91,9 @@ public class Main {
                 System.out.print("""
 ================= Menu Peminjaman =================
 # Mobil :
-1. ( MB001 ) = BMW M4                     |   Rp 3.000.000  / hari   |  2 pintu
-2. ( MB002 ) = Lamborghini Aventador      |   Rp 10.000.000 / hari   |  2 pintu
-3. ( MB003 ) = BMW 3 Series               |   Rp 2.000.000  / hari   |  4 pintu
+1. Merk Mobil = BMW M4                     |   Rp 3.000.000  / hari   |  2 pintu
+2. Merk Mobil = Lamborghini Aventador      |   Rp 10.000.000 / hari   |  2 pintu
+3. Merk Mobil = BMW 3 Series               |   Rp 2.000.000  / hari   |  4 pintu
 
                 """);
 
