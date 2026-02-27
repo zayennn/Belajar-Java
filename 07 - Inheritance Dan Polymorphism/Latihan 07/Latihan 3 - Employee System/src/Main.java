@@ -25,5 +25,8 @@ public class Main {
         }
     }
 
-
+    public static void main(String[] args) {
+        Employee programmer = new Employee("capypoter", 100000);
+        System.out.printf("nama : %s, gaji : %s", programmer.nama, programmer.getHitungGaji());
+    }
 }
