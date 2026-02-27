@@ -79,10 +79,21 @@ public class Main {
 
         Kendaraan[] daftar = new Kendaraan[jumlah_peminjaman];
 
-        System.out.print("pilih kendaraan yang ingin anda sewa (motor/mobil) : ");
-        String menu_user = input.nextLine().toLowerCase();
+        for (int i = 0; i < jumlah_peminjaman; i++) {
+            System.out.print("pilih kendaraan yang ingin anda sewa (mobil/motor) : ");
+            String menu_user = input.nextLine().toLowerCase();
 
-        System.out.println(menu_user);
+            if (menu_user.equals("mobil")) {
+                System.out.print("""
 
+================= Menu Peminjaman =================
+# Mobil :
+• ( MB001 ) = BMW M4                     |   Rp 3.000.000  / hari   |  2 pintu
+• ( MB002 ) = Lamborghini Aventador      |   Rp 10.000.000 / hari   |  2 pintu
+• ( MB003 ) = BMW 3 Series               |   Rp 2.000.000  / hari   |  4 pintu
+
+                """);
+            }
+        }
     }
 }
