@@ -75,11 +75,12 @@ public class Main {
 
         System.out.print("masukan jumlah peminjaman : ");
         int jumlah_peminjaman = input.nextInt();
+        input.nextLine();
 
         Kendaraan[] daftar = new Kendaraan[jumlah_peminjaman];
 
         System.out.print("pilih kendaraan yang ingin anda sewa (motor/mobil) : ");
-        String menu_user = input.nextLine();
+        String menu_user = input.nextLine().toLowerCase();
 
         System.out.println(menu_user);
 
