@@ -105,6 +105,7 @@ public class Main {
                 if (kode_mobil.equals("MB001")) {
                     System.out.print("masukan berapa lama anda ingin menyewa mobil / hari : ");
                     hari = input.nextInt();
+                    input.nextLine();
 
                     Mobil sewa_mobil = new Mobil("BMW M4", 3000000, 2);
                     daftar[i] = sewa_mobil;
