@@ -4,7 +4,7 @@ interface BisaBerenang{
 
 class Ikan implements BisaBerenang{
     public void berenang() {
-        System.out.println("ikan berennag menggunakan sirip");
+        System.out.println("ikan berenag menggunakan sirip");
     }
 }
 
