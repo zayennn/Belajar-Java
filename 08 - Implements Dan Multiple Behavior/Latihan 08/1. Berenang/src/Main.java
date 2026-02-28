@@ -16,6 +16,13 @@ class Bebek implements BisaBerenang{
 
 public class Main{
     public static void main(String[] args) {
+        BisaBerenang[] daftar = {
+                new Ikan(),
+                new Bebek()
+        };
 
+        for (BisaBerenang bb : daftar) {
+            bb.berenang();
+        }
     }
 }
