@@ -22,7 +22,9 @@ abstract class Kendaraan {
         this.hargaSewaPerHari = hargaSewaPerHari;
     }
 
-    abstract String getHargaSewaPerHari(int hari);
+    abstract int getHitungTotal(int hari);
+
+    abstract String getInfo(int hari);
 }
 
 class Mobil extends Kendaraan {
@@ -34,7 +36,12 @@ class Mobil extends Kendaraan {
     }
 
     @Override
-    String getHargaSewaPerHari(int hari) {
+    int getHitungTotal(int hari) {
+        return hargaSewaPerHari * hari;
+    }
+
+    @Override
+    String getInfo(int hari) {
         int total = hargaSewaPerHari * hari;
         return String.format("""
 
@@ -58,7 +65,12 @@ class Motor extends Kendaraan {
     }
 
     @Override
-    String getHargaSewaPerHari(int hari) {
+    int getHitungTotal(int hari) {
+        return hargaSewaPerHari * hari;
+    }
+
+    @Override
+    String getInfo(int hari) {
         int total = hargaSewaPerHari * hari;
         return String.format("""
 Merk Motor          : %s
@@ -174,7 +186,7 @@ public class Main {
 
         int counter = 0;
         for (Kendaraan kendaraan : daftar) {
-            System.out.println(kendaraan.getHargaSewaPerHari(hari[counter]));
+            System.out.println(kendaraan.getHitungTotal(hari[counter]));
             counter++;
         }
     }
