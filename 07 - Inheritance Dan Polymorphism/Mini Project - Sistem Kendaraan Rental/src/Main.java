@@ -144,9 +144,9 @@ public class Main {
             } else if (menu_user.equals("motor")) {
                 System.out.print("""
 # Motor :
-1. Merk Motoe = Kawasaki Ninja H2R         |   Rp 1.000.000  / hari   |  Tipe Helm : Anak Sunmori
-2. Merk Motoe = BMW S1KRR                  |   Rp 2.439.999  / hari   |  Tipe Helm : Anak Sunmori
-3. Merk Motoe = Ducati V4S Superlegerra    |   Rp 3.499.999  / hari   |  Tipe Helm : Anak Sunmori
+1. Merk Motor = Kawasaki Ninja H2R         |   Rp 1.000.000  / hari   |  Tipe Helm : Anak Sunmori
+2. Merk Motor = BMW S1KRR                  |   Rp 2.439.999  / hari   |  Tipe Helm : Anak Sunmori
+3. Merk Motor = Ducati V4S Superlegerra    |   Rp 3.499.999  / hari   |  Tipe Helm : Anak Sunmori
                         """);
 
                 Motor sewa_motor;
