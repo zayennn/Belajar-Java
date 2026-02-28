@@ -17,12 +17,9 @@ class MemberSilver implements Diskon{
 public class Main{
     public static void main(String[] args) {
         MemberGold person1 = new MemberGold();
-        person1.getHitungDiskon(100000);
-
         MemberSilver person2 = new MemberSilver();
-        person2.getHitungDiskon(100000);
 
-        System.out.println(person1);
-        System.out.println(person2);
+        System.out.println("harga yang harus di bayar : " + person1.getHitungDiskon(100000));
+        System.out.println("harga yang harus di bayar : " + person1.getHitungDiskon(100000));
     }
 }
