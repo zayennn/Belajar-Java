@@ -168,7 +168,8 @@ public class Main {
                         break;
                 }
             } else {
-                throw new IllegalArgumentException("tidak ada kendaraan yang anda maksud");
+//                throw new IllegalArgumentException("tidak ada kendaraan yang anda maksud");
+                System.out.println("tidak ada pilihan yang anda maksud");
             }
         }
 
