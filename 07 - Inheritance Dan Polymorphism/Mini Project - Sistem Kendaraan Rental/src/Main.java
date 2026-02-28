@@ -189,10 +189,10 @@ public class Main {
 
         int counter = 0;
         for (Kendaraan kendaraan : daftar) {
-            System.out.println(kendaraan.getHitungTotal(hari[counter]));
+            System.out.println(kendaraan.getInfo(hari[counter]));
             counter++;
         }
 
-        System.out.println("Total yang harus anda bayar adalah : " + total_bayar);
+        System.out.println("Total yang harus anda bayar adalah : " + Kendaraan.formatRupiah.format(total_bayar) + " -");
     }
 }
