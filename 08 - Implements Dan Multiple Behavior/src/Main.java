@@ -22,6 +22,8 @@ class Burung implements Terbang {
     }
 }
 
+// didalem implements default nya adalah public abstract
+
 // keyword : implements
 
 // beda nya interface dan abstract class :
@@ -31,7 +33,6 @@ class Burung implements Terbang {
    | Bisa punya constructor  | Tidak punya constructor   |
    | Single inheritance      | Bisa multiple             |
 */
-
 
 // java gabisa :
 // class A extends B, C
