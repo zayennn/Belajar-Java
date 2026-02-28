@@ -94,6 +94,7 @@ public class Main {
 
         Kendaraan[] daftar = new Kendaraan[jumlah_peminjaman];
         int[] hari = new int[jumlah_peminjaman];
+        int total_bayar = 0;
 
         for (int i = 0; i < jumlah_peminjaman; i++) {
             System.out.print("pilih kendaraan yang ingin anda sewa (mobil/motor) : ");
@@ -182,6 +183,8 @@ public class Main {
             } else {
                 throw new IllegalArgumentException("tidak ada kendaraan yang anda maksud");
             }
+
+            total_bayar += daftar[i].getHitungTotal(hari[i]);
         }
 
         int counter = 0;
@@ -189,5 +192,7 @@ public class Main {
             System.out.println(kendaraan.getHitungTotal(hari[counter]));
             counter++;
         }
+
+        System.out.println("Total yang harus anda bayar adalah : " + total_bayar);
     }
 }
