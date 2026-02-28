@@ -128,6 +128,45 @@ public class Main {
                         daftar[i] = sewa_mobil;
                         break;
                 }
+            } else if (menu_user.equals("motor")) {
+                System.out.print("""
+# Motor :
+1. Merk Motoe = Kawasaki Ninja H2R         |   Rp 1.000.000  / hari   |  Tipe Helm : Anak Sunmori
+2. Merk Motoe = BMW S1KRR                  |   Rp 2.439.999  / hari   |  Tipe Helm : Anak Sunmori
+3. Merk Motoe = Ducati V4S Superlegerra    |   Rp 3.499.999  / hari   |  Tipe Helm : Anak Sunmori
+                        """);
+
+                Motor sewa_motor;
+
+                System.out.print("pilih motor menggunakan menu (1/2/3) : ");
+                int menu = input.nextInt();
+
+                switch (menu) {
+                    case 1 :
+                        System.out.print("masukan berapa lama anda ingin menyewa motor / hari : ");
+                        hari[i] = input.nextInt();
+                        input.nextLine();
+
+                        sewa_motor = new Motor("Kawasaki Ninja H2R", 1000000, "Anak Sunmori");
+                        daftar[i] = sewa_motor;
+                        break;
+                    case 2 :
+                        System.out.print("masukan berapa lama anda ingin menyewa motor / hari : ");
+                        hari[i] = input.nextInt();
+                        input.nextLine();
+
+                        sewa_motor = new Motor("BMW S1KRR", 2349999, "Anak Sunmori");
+                        daftar[i] = sewa_motor;
+                        break;
+                    case 3 :
+                        System.out.print("masukan berapa lama anda ingin menyewa motor / hari : ");
+                        hari[i] = input.nextInt();
+                        input.nextLine();
+
+                        sewa_motor = new Motor("Ducati V4S Superlegerra", 3499999, "Anak Sunmori");
+                        daftar[i] = sewa_motor;
+                        break;
+                }
             }
         }
 
