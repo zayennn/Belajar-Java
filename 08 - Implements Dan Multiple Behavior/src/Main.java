@@ -37,3 +37,33 @@ class Burung implements Terbang {
 // class A extends B, C
 // tapi bisa
 // class A implements B, C, D dst → multiple behavior
+
+// contoh polymorphism interface
+interface Pembayaran{
+    void bayar(int jumlah);
+}
+
+class Dana implements Pembayaran{
+    public void bayar(int jumlah) {
+        System.out.println("bayar pake dana : " + jumlah);
+    }
+}
+
+class Ovo implements Pembayaran{
+    public void bayar(int jumlah) {
+        System.out.println("bayar pake ovo : " + jumlah);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Pembayaran[] daftar = {
+            new Dana(),
+            new Ovo()
+        };
+
+        for (Pembayaran p : daftar) {
+            p.bayar(1000000);
+        }
+    }
+}
