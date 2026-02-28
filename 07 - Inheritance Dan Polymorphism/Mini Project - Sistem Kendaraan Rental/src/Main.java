@@ -61,12 +61,12 @@ class Motor extends Kendaraan {
     String getHargaSewaPerHari(int hari) {
         int total = hargaSewaPerHari * hari;
         return String.format("""
-merk mobil          : %s
-tipe helm           : %s
-harga sewa per hari : %s -
-disewa selama       : %d hari
+Merk Motor          : %s
+Tipe Helm           : %s
+Harga Sewa Per Hari : %s -
+Disewa Selama       : %d hari
 ———————————————————————————————————— ×
-total               : %s -
+Total               : %s -
                 
                 """, merk, tipe_helm, formatRupiah.format(hargaSewaPerHari), hari, formatRupiah.format(total));
     }
