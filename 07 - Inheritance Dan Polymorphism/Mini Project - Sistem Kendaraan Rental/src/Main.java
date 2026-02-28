@@ -167,6 +167,8 @@ public class Main {
                         daftar[i] = sewa_motor;
                         break;
                 }
+            } else {
+                throw new IllegalArgumentException("tidak ada kendaraan yang anda maksud");
             }
         }
 
