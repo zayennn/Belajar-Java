@@ -4,10 +4,14 @@ class Vehicle{
     Vehicle(String merk) {
         this.merk = merk;
     }
+
+    void jalan() {
+        System.out.println("jalan");
+    }
 }
 
 interface Electric {
-    void isiDaya();
+    double isiDaya(double jumlah_isi);
     double getCekBatre();
 }
 
