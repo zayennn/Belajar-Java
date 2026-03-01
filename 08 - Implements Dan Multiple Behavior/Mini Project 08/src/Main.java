@@ -115,7 +115,6 @@ public class Main {
         for (int i = 0; i < jumlah_peminjaman; i++) {
             System.out.printf("pilihan ke - %d, kendaraan apa yang ingin anda sewa (mobil/motor) ? : ", i + 1);
             String menu_user = input.nextLine().toLowerCase();
-            System.out.print("");
 
             if (menu_user.equals("mobil")) {
                 System.out.print("""
