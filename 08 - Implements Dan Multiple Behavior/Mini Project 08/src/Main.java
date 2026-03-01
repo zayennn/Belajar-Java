@@ -39,7 +39,9 @@ class Mobil extends Kendaraan implements Pajak {
         this.jumlah_pintu = jumlah_pintu;
     }
 
-    public int
+    public int getHitungPajak(int total) {
+        return (int)(total * 0.1);
+    }
 
     @Override
     int getHitungTotal(int hari) {
@@ -49,21 +51,22 @@ class Mobil extends Kendaraan implements Pajak {
     @Override
     String getInfo(int hari) {
         int total = hargaSewaPerHari * hari;
-        int pajak = total * getHitungPajak(10) / 100;
+        int pajak = getHitungPajak(total);
         return String.format("""
 
 Merk Mobil                : %s
 Jumlah Pintu Mobil        : %d
 Harga Sewa Per Hari       : %s -
 Disewa Selama             : %d hari
+Pajak Yang Harus Dibayar  : %s -
 —————————————————————————————————————————— ×
 Total                     : %s -
                 
-                """, merk, jumlah_pintu, formatRupiah.format(hargaSewaPerHari), hari, formatRupiah.format(total));
+                """, merk, jumlah_pintu, formatRupiah.format(hargaSewaPerHari), hari, formatRupiah.format(pajak), formatRupiah.format(total));
     }
 }
 
-class Motor extends Kendaraan {
+class Motor extends Kendaraan implements Pajak {
     String tipe_helm;
 
     Motor(String merk, int hargaSewaPerHari, String tipe_helm) {
