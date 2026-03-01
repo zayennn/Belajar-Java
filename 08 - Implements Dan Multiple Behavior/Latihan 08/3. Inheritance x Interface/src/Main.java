@@ -56,7 +56,7 @@ class Tesla extends Vehicle implements Electric {
         double energi_dipakai = jarak * konsumsi_batre_per_km;
         double biaya = energi_dipakai * harga_listrik_per_kwh;
 
-        return String.format(Vehicle.formatRupiah(biaya));
+        return Vehicle.formatRupiah.format(biaya);
     }
 }
 
