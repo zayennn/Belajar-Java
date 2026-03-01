@@ -1,5 +1,17 @@
+import java.util.Locale;
+import java.text.NumberFormat;
+
 class Vehicle{
     String merk;
+
+    public static final Locale indonesia = new Locale("id", "ID");
+    public static final NumberFormat formatRupiah;
+
+    static {
+        formatRupiah = NumberFormat.getCurrencyInstance(indonesia);
+        formatRupiah.setMinimumFractionDigits(0);
+        formatRupiah.setMaximumFractionDigits(0);
+    }
 
     Vehicle(String merk) {
         this.merk = merk;
@@ -40,17 +52,17 @@ class Tesla extends Vehicle implements Electric {
         return batre_sekarang;
     }
 
-    double hitungBiayaListrik(int jarak) {
+    String hitungBiayaListrik(int jarak) {
         double energi_dipakai = jarak * konsumsi_batre_per_km;
         double biaya = energi_dipakai * harga_listrik_per_kwh;
 
-        return biaya;
+        return String.format(Vehicle.formatRupiah(biaya));
     }
 }
 
 public class Main{
     public static void main(String[] args) {
         Tesla t = new Tesla("Tesla", 57);
-        System.out.println(t.getCekBatre());
+        System.out.println(t.hitungBiayaListrik(40));
     }
 }
