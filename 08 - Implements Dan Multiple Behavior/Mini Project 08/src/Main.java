@@ -39,6 +39,8 @@ class Mobil extends Kendaraan implements Pajak {
         this.jumlah_pintu = jumlah_pintu;
     }
 
+    public int
+
     @Override
     int getHitungTotal(int hari) {
         return hargaSewaPerHari * hari;
@@ -54,15 +56,14 @@ Merk Mobil                : %s
 Jumlah Pintu Mobil        : %d
 Harga Sewa Per Hari       : %s -
 Disewa Selama             : %d hari
-Pajak yang harus dibayar  : %s -
 —————————————————————————————————————————— ×
 Total                     : %s -
                 
-                """, merk, jumlah_pintu, formatRupiah.format(hargaSewaPerHari), hari, formatRupiah.format(pajak), formatRupiah.format(total));
+                """, merk, jumlah_pintu, formatRupiah.format(hargaSewaPerHari), hari, formatRupiah.format(total));
     }
 }
 
-class Motor extends Kendaraan implements Pajak {
+class Motor extends Kendaraan {
     String tipe_helm;
 
     Motor(String merk, int hargaSewaPerHari, String tipe_helm) {
@@ -75,22 +76,18 @@ class Motor extends Kendaraan implements Pajak {
         return hargaSewaPerHari * hari;
     }
 
-    publ
-
     @Override
     String getInfo(int hari) {
         int total = hargaSewaPerHari * hari;
-        int pajak = total * getHitungPajak(10) / 100;
         return String.format("""
-Merk Motor                : %s
-Tipe Helm                 : %s
-Harga Sewa Per Hari       : %s -
-Disewa Selama             : %d hari
-Pajak yang harus dibayar  : %s -
-—————————————————————————————————————————— ×
-Total                     : %s -
+Merk Motor          : %s
+Tipe Helm           : %s
+Harga Sewa Per Hari : %s -
+Disewa Selama       : %d hari
+———————————————————————————————————— ×
+Total               : %s -
                 
-                """, merk, tipe_helm, formatRupiah.format(hargaSewaPerHari), hari, formatRupiah.format(pajak), formatRupiah.format(total));
+                """, merk, tipe_helm, formatRupiah.format(hargaSewaPerHari), hari, formatRupiah.format(total));
     }
 }
 
