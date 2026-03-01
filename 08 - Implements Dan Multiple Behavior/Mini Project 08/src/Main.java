@@ -200,7 +200,8 @@ public class Main {
                 throw new IllegalArgumentException("tidak ada kendaraan yang anda maksud");
             }
 
-            total_bayar += daftar[i].getHitungTotal(hari[i]);
+            int total = daftar[i].getHitungTotal(hari[i]);
+            total_bayar += total + ((Pajak) daftar[i]).getHitungPajak(total);
         }
 
         int counter = 0;
