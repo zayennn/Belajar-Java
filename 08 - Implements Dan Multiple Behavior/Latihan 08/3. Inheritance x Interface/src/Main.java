@@ -50,6 +50,7 @@ class Tesla extends Vehicle implements Electric {
 
 public class Main{
     public static void main(String[] args) {
-
+        Vehicle mobil1 = new Vehicle("mobil 1");
+        mobil1.jalan();
     }
 }
