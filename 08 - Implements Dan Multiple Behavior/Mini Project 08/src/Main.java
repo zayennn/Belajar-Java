@@ -96,7 +96,7 @@ Pajak Yang Harus Dibayar  : %s -
 —————————————————————————————————————————— ×
 Total               : %s -
                 
-                """, merk, tipe_helm, formatRupiah.format(hargaSewaPerHari), hari, formatRupiah.format(pajak), formatRupiah.format(total));
+                """, merk, tipe_helm, formatRupiah.format(hargaSewaPerHari), hari, formatRupiah.format(pajak), formatRupiah.format(total + pajak));
     }
 }
 
