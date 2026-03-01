@@ -21,7 +21,7 @@ class Tesla extends Vehicle implements Electric {
     final private double konsumsi_batre_per_km = 0.2;
     final private int harga_listrik_per_kwh = 1500;
 
-    Tesla(String merk) {
+    Tesla(String merk, double batre_sekarang) {
         super(merk);
         this.batre_sekarang = batre_sekarang;
     }
@@ -50,7 +50,7 @@ class Tesla extends Vehicle implements Electric {
 
 public class Main{
     public static void main(String[] args) {
-        Vehicle mobil1 = new Vehicle("mobil 1");
-        mobil1.jalan();
+        Tesla t = new Tesla("Tesla", 57);
+        System.out.println(t.getCekBatre());
     }
 }
