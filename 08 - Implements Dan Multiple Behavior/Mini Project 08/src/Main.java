@@ -79,18 +79,24 @@ class Motor extends Kendaraan implements Pajak {
         return hargaSewaPerHari * hari;
     }
 
+    public int getHitungPajak(int total) {
+        return (int)(total * 0.1);
+    }
+
     @Override
     String getInfo(int hari) {
         int total = hargaSewaPerHari * hari;
+        int pajak = getHitungPajak(total);
         return String.format("""
 Merk Motor          : %s
 Tipe Helm           : %s
 Harga Sewa Per Hari : %s -
 Disewa Selama       : %d hari
-———————————————————————————————————— ×
+Pajak Yang Harus Dibayar  : %s -
+—————————————————————————————————————————— ×
 Total               : %s -
                 
-                """, merk, tipe_helm, formatRupiah.format(hargaSewaPerHari), hari, formatRupiah.format(total));
+                """, merk, tipe_helm, formatRupiah.format(hargaSewaPerHari), hari, formatRupiah.format(pajak), formatRupiah.format(total));
     }
 }
 
