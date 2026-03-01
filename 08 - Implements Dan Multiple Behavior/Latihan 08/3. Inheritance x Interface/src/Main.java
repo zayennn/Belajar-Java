@@ -4,14 +4,6 @@ class Vehicle{
     Vehicle(String merk) {
         this.merk = merk;
     }
-
-    void start(){
-        System.out.println("jalan");
-    }
-
-    void stop() {
-        System.out.println("berhenti");
-    }
 }
 
 interface Electric {
@@ -20,13 +12,36 @@ interface Electric {
 }
 
 class Tesla extends Vehicle implements Electric {
-    int batre_sekarang;
+    double batre_sekarang;
+    final private double kapasitas_batre = 100;
+    final private double konsumsi_batre_per_km = 0.2;
+    final private int harga_listrik_per_kwh = 1500;
 
-    Tesla(String merk, int batre_sekarang) {
+    Tesla(String merk) {
         super(merk);
+        this.batre_sekarang = batre_sekarang;
     }
 
+    public double isiDaya(double jumlah_isi) {
+        batre_sekarang += jumlah_isi;
 
+        if (batre_sekarang > kapasitas_batre) {
+            batre_sekarang = kapasitas_batre;
+        }
+
+        return batre_sekarang;
+    }
+
+    public double getCekBatre() {
+        return batre_sekarang;
+    }
+
+    double hitungBiayaListrik(int jarak) {
+        double energi_dipakai = jarak * konsumsi_batre_per_km;
+        double biaya = energi_dipakai * harga_listrik_per_kwh;
+
+        return biaya;
+    }
 }
 
 public class Main{
