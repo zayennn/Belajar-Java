@@ -62,7 +62,7 @@ Pajak Yang Harus Dibayar  : %s -
 —————————————————————————————————————————— ×
 Total                     : %s -
                 
-                """, merk, jumlah_pintu, formatRupiah.format(hargaSewaPerHari), hari, formatRupiah.format(pajak), formatRupiah.format(total));
+                """, merk, jumlah_pintu, formatRupiah.format(hargaSewaPerHari), hari, formatRupiah.format(pajak), formatRupiah.format(total + pajak));
     }
 }
 
