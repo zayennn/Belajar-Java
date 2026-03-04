@@ -10,3 +10,5 @@ public class Main {
         System.out.println(products.get("BMW"));
     }
 }
+
+// key → value
