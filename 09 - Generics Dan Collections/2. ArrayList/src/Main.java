@@ -10,3 +10,10 @@ public class Main {
         System.out.println(daftar.get(0));
     }
 }
+
+// beda nya dengan array biasa :
+/*
+    • lebih dinamis
+    • banyak method built in
+    • lebih fleksibel
+ */
