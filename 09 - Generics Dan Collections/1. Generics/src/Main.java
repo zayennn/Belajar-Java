@@ -9,3 +9,5 @@
 *   • dll
 */
 
+// contoh generics : ArrayList<String> daftarNama = new ArrayList<>();
+// <String> itu generic type, artinya array ini cuma boleh diisi sama tipe data String
