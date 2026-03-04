@@ -2,9 +2,9 @@ import java.util.ArrayList;
 
 public class Main {
     static class Buku {
-        private String judul_buku;
-        private String penulis;
-        private int tahun;
+        String judul_buku;
+        String penulis;
+        int tahun;
 
         Buku(String judul_buku, String penulis, int tahun) {
             this.judul_buku = judul_buku;
@@ -25,11 +25,11 @@ tahun terbit    :   %d
     public static void main(String[] args) {
         ArrayList<Buku> bukus = new ArrayList<>();
 
-        bukus.add(new Buku("buku 1", "fulan", 2023));
-        bukus.add(new Buku("buku 2", "fulana", 2024));
+       bukus.add(new Buku("buku 1", "fulan", 2023));
+       bukus.add(new Buku("buku 2", "fulana", 2022));
 
-        for (Buku buku : bukus) {
-            buku.getInfo();
-        }
+       for (Buku buku : bukus) {
+           buku.getInfo();
+       }
     }
 }
