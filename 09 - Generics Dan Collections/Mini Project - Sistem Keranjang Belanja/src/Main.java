@@ -104,6 +104,7 @@ public class Main {
                     break;
                 case 5:
                     System.out.println("Terimakasih..");
+                    break;
                 default:
                     throw new IllegalArgumentException("opsi menu tidak valid!");
             }
