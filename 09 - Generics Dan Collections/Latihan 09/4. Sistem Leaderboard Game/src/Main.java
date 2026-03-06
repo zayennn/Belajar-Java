@@ -51,11 +51,14 @@ public class Main {
                 max = p.score;
             }
 
+            total += p.score;
+
             p.getInfo(count);
             count++;
 
         }
 
         System.out.println("Score tertinggi adalah : " + max);
+        System.out.println("Total score : " + max);
     }
 }
