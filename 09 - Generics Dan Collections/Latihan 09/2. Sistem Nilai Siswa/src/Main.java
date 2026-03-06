@@ -5,6 +5,8 @@ public class Main{
     public static void main(String[] args) {
         HashMap<String, Integer> siswas = new HashMap<>();
 
+        int nilai_rata_rata;
+
         siswas.put("capytanic", 78);
         siswas.put("capypoter", 72);
         siswas.put("capyking", 90);
