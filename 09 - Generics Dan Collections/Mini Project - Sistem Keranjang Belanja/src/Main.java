@@ -40,6 +40,7 @@ public class Main {
     public static void main(String[] args) {
         ArrayList<Product> products = new ArrayList<>();
         Scanner input = new Scanner(System.in);
+        int total = 0;
 
         while (true) {
             System.out.println("""
@@ -67,12 +68,26 @@ public class Main {
                     break;
 
                 case 2:
-                    int count = 1;
-                    for (Product i : products) {
-                        i.getInfoProducts(count);
-                        count++;
+                    if (products.isEmpty()) {
+                        System.out.println("product masih kosong");
+                        break;
+                    } else {
+                        int count = 1;
+                        for (Product i : products) {
+                            i.getInfoProducts(count);
+                            count++;
+                        }
+                        break;
                     }
-                    break;
+
+                case 3:
+                    for (Product i : products) {
+                        total += i.harga;
+                    }
+                    System.out.println(total);
+                default:
+                    throw new IllegalArgumentException("opsi menu tidak valid!");
+
             }
         }
     }
