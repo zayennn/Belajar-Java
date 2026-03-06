@@ -102,7 +102,8 @@ public class Main {
                     }
                     System.out.println(Product.formatRupiah(max));
                     break;
-
+                case 5:
+                    System.out.println("Terimakasih..");
                 default:
                     throw new IllegalArgumentException("opsi menu tidak valid!");
             }
