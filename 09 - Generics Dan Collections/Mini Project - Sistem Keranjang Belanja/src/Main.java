@@ -29,9 +29,9 @@ public class Main {
 
         void getInfoProducts(int count) {
             System.out.printf("""
-                    ================= Menu Product =================
                     # %d  Nama Product   : %s
                          Harga Product  : %s
+                         
                     """, count, setCapitalize(nama), rupiah.format(harga));
         }
     }
@@ -40,9 +40,12 @@ public class Main {
         ArrayList<Product> products = new ArrayList<>();
 
         Product product1 = new Product("bakso malang", 10000);
-        products.add(product1);
+        Product product2 = new Product("bakso malang", 10000);
+        Product product3 = new Product("bakso malang", 10000);
+        products.addAll(java.util.Arrays.asList(product1, product2, product3));
 
         int count = 1;
+        System.out.println("================= Menu Product =================");
         for (Product product : products) {
             product.getInfoProducts(count);
             count++;
