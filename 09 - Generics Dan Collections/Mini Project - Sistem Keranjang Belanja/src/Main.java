@@ -49,8 +49,11 @@ public class Main {
                     3. Hitung Total Harga
                     4. Cari Product Termahal
                     5. Keluar
+                    `
+                    
                     """);
 
+            System.out.print("Masukan pilihan anda (1,2,3,4,5) : ");
             int opsi = input.nextInt();
             input.nextLine();
 
