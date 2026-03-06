@@ -27,6 +27,7 @@ tahun terbit    :   %d
 
        bukus.add(new Buku("buku 1", "fulan", 2023));
        bukus.add(new Buku("buku 2", "fulana", 2022));
+       bukus.add(new Buku("buku 3", "fulani", 2022));
 
        for (Buku buku : bukus) {
            buku.getInfo();
