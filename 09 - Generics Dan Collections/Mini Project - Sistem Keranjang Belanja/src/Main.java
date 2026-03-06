@@ -70,6 +70,8 @@ public class Main {
 
                     Product p = new Product(nama, harga);
                     products.add(p);
+
+                    System.out.println("Product berhasil ditambahkan!");
                     break;
 
                 case 2:
