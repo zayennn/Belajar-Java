@@ -100,7 +100,7 @@ public class Main {
                             max = i.harga;
                         }
                     }
-
+                    System.out.println(Product.formatRupiah(max));
                     break;
 
                 default:
