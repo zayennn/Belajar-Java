@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Main{
+public class Main {
     static class Player {
         private String nama;
         private int score;
@@ -13,10 +13,10 @@ public class Main{
 
         void getInfo(int count) {
             System.out.printf("""
-========== Player Ke - %d ==========
-Nama    :   %s
-Score   :   %d
-
+                    ========== Player Ke - %d ==========
+                    Nama    :   %s
+                    Score   :   %d
+                    
                     """, count, nama, score);
         }
     }
@@ -54,7 +54,8 @@ Score   :   %d
             p.getInfo(count);
             count++;
 
-            System.out.println("Score tertinggi adalah : " + max);
         }
+
+        System.out.println("Score tertinggi adalah : " + max);
     }
 }
