@@ -29,8 +29,12 @@ tahun terbit    :   %d
        bukus.add(new Buku("buku 2", "fulana", 2022));
        bukus.add(new Buku("buku 3", "fulani", 2022));
 
+       int count = 0;
        for (Buku buku : bukus) {
            buku.getInfo();
+
+           count++;
+           System.out.printf("jumlah buku ada : %d", count);
        }
     }
 }
