@@ -58,7 +58,10 @@ public class Main {
 
         }
 
+        rata_rata = total / jum_players;
+
         System.out.println("Score tertinggi adalah : " + max);
-        System.out.println("Total score : " + max);
+        System.out.println("Total score : " + total);
+        System.out.println("Rata rata score : " + rata_rata);
     }
 }
