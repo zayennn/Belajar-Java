@@ -25,7 +25,7 @@ public class Main {
         void getInfoProducts(int count) {
             System.out.printf("""
                     ================= Menu Product =================
-                    %d. Nama Product   : %s
+                    #%d Nama Product   : %s
                        Harga Product  : %s
                     """, count, nama, rupiah.format(harga));
         }
