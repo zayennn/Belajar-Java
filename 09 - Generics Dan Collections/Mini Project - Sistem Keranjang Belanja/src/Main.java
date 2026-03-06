@@ -85,9 +85,10 @@ public class Main {
                         total += i.harga;
                     }
                     System.out.println(total);
+                    break;
+
                 default:
                     throw new IllegalArgumentException("opsi menu tidak valid!");
-
             }
         }
     }
