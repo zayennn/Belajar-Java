@@ -28,6 +28,10 @@ public class Main {
             return nama.substring(0, 1).toUpperCase() + nama.substring(1);
         }
 
+        static String formatRupiah(int harga) {
+            return rupiah.format(harga);
+        }
+
         void getInfoProducts(int count) {
             System.out.printf("""
                     # %d  Nama Product   : %s
@@ -41,6 +45,7 @@ public class Main {
         ArrayList<Product> products = new ArrayList<>();
         Scanner input = new Scanner(System.in);
         int total = 0;
+        int max = 0;
 
         while (true) {
             System.out.println("""
@@ -84,7 +89,16 @@ public class Main {
                     for (Product i : products) {
                         total += i.harga;
                     }
-                    System.out.println(total);
+                    System.out.println(Product.formatRupiah(total));
+                    break;
+
+                case 4 :
+                    for (Product i : products) {
+                        if (max < i.harga) {
+                            max = i.harga;
+                        }
+                    }
+
                     break;
 
                 default:
