@@ -52,16 +52,26 @@ public class Main {
                     """);
 
             int opsi = input.nextInt();
+            input.nextLine();
 
             switch (opsi) {
-                case 1 :
-                    System.out.print("Masukan Product ke %d : ");
+                case 1:
+                    System.out.printf("Masukan Product : ");
                     String nama = input.nextLine();
                     System.out.print("Masukan harga product : ");
                     int harga = input.nextInt();
 
                     Product p = new Product(nama, harga);
-                    products.addAll(java.util.Arrays.asList(nama, harga));
+                    products.add(p);
+                    break;
+
+                case 2:
+                    int count = 1;
+                    for (Product i : products) {
+                        i.getInfoProducts(count);
+                        count++;
+                    }
+                    break;
             }
         }
     }
