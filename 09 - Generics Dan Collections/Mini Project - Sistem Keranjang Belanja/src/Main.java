@@ -49,7 +49,6 @@ public class Main {
                     3. Hitung Total Harga
                     4. Cari Product Termahal
                     5. Keluar
-                    `
                     
                     """);
 
