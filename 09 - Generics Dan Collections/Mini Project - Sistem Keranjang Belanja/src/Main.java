@@ -1,4 +1,5 @@
 import java.awt.font.NumericShaper;
+import java.nio.file.LinkPermission;
 import java.util.ArrayList;
 import java.util.Locale;
 import java.text.NumberFormat;
@@ -31,24 +32,37 @@ public class Main {
             System.out.printf("""
                     # %d  Nama Product   : %s
                          Harga Product  : %s
-                         
+                    
                     """, count, setCapitalize(nama), rupiah.format(harga));
         }
     }
 
     public static void main(String[] args) {
         ArrayList<Product> products = new ArrayList<>();
+        Scanner input = new Scanner(System.in);
 
-        Product product1 = new Product("bakso malang", 10000);
-        Product product2 = new Product("bakso malang", 10000);
-        Product product3 = new Product("bakso malang", 10000);
-        products.addAll(java.util.Arrays.asList(product1, product2, product3));
+        while (true) {
+            System.out.println("""
+                    ================= Menu Opsi Petugas =================
+                    1. Tambah Products
+                    2. Tampilkan Products
+                    3. Hitung Total Harga
+                    4. Cari Product Termahal
+                    5. Keluar
+                    """);
 
-        int count = 1;
-        System.out.println("================= Menu Product =================");
-        for (Product product : products) {
-            product.getInfoProducts(count);
-            count++;
+            int opsi = input.nextInt();
+
+            switch (opsi) {
+                case 1 :
+                    System.out.print("Masukan Product ke %d : ");
+                    String nama = input.nextLine();
+                    System.out.print("Masukan harga product : ");
+                    int harga = input.nextInt();
+
+                    Product p = new Product(nama, harga);
+                    products.addAll(java.util.Arrays.asList(nama, harga));
+            }
         }
     }
 }
