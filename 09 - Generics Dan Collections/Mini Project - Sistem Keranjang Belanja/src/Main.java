@@ -22,17 +22,21 @@ public class Main {
             this.harga = harga;
         }
 
+        String setCapitalize(String nama) {
+            return nama.substring(0, 1).toUpperCase() + nama.substring(1);
+        }
+
         void getInfoProducts(int count) {
             System.out.printf("""
                     ================= Menu Product =================
                     # %d  Nama Product   : %s
                          Harga Product  : %s
-                    """, count, nama, rupiah.format(harga));
+                    """, count, setCapitalize(nama), rupiah.format(harga));
         }
     }
 
     public static void main(String[] args) {
-        Product products = new Product("bakso", 10000);
+        Product products = new Product("bakso malang", 10000);
 
         products.getInfoProducts(1);
     }
