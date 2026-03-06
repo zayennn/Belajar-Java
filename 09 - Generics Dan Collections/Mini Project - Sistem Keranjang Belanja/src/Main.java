@@ -2,6 +2,7 @@ import java.awt.font.NumericShaper;
 import java.util.ArrayList;
 import java.util.Locale;
 import java.text.NumberFormat;
+import java.util.Scanner;
 
 public class Main {
     static class Product {
@@ -36,8 +37,15 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Product products = new Product("bakso malang", 10000);
+        ArrayList<Product> products = new ArrayList<>();
 
-        products.getInfoProducts(1);
+        Product product1 = new Product("bakso malang", 10000);
+        products.add(product1);
+
+        int count = 1;
+        for (Product product : products) {
+            product.getInfoProducts(count);
+            count++;
+        }
     }
 }
