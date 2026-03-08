@@ -11,7 +11,10 @@ public class Main {
         int score;
 
         Player(String nama, int score) {
-
+            this.nama = nama;
+            this.score = score;
         }
+
+
     }
 }
