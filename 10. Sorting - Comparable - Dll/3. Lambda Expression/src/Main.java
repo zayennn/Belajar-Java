@@ -34,7 +34,7 @@ public class Main {
         players.addAll(Arrays.asList(
                 new Player("capytanic", 370),
                 new Player("capyking", 390),
-                new Player("capytanic", 320),
+                new Player("capypoter", 320),
                 new Player("capytanic", 370),
         ));
     }
