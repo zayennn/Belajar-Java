@@ -38,7 +38,16 @@ public class Main {
                 new Player("capyjayen", 310)
         ));
 
+//        (a,b) artinya Player a dan Player b
+//        -> artinya return
         players.sort((a, b) -> b.score - a.score);
+//        jadi sebenernya :
+//        (a,b) -> b.score - a.score itu sama dengan :
+        /*
+            public int compareTo(Player a, Player b) {
+                return b.score - a.score;
+            }
+        */
 
         for (Player p : players) {
             p.getInfo();
