@@ -9,5 +9,9 @@ public class Main {
     static class Player {
         String nama;
         int score;
+
+        Player(String nama, int score) {
+
+        }
     }
 }
