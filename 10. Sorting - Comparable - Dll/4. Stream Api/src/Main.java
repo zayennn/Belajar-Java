@@ -33,5 +33,9 @@ public class Main {
                 new Player("capypoter", 350),
                 new Player("capyjayen", 320)
         ));
+
+        players.stream()
+                .filter(p -> p.score > 350)
+                .forEach(p -> p.getInfo());
     }
 }
