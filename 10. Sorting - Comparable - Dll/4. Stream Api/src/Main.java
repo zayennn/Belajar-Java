@@ -31,7 +31,7 @@ public class Main {
                 new Player("capytanic", 370),
                 new Player("capyking", 390),
                 new Player("capypoter", 350),
-                new Player("capyjayen", 320),
+                new Player("capyjayen", 320)
         ));
     }
 }
