@@ -37,5 +37,9 @@ public class Main {
                 new Player("capypoter", 320),
                 new Player("capyjayen", 310)
         ));
+
+        players.sort((a, b) -> b.score - a.score);
+
+
     }
 }
