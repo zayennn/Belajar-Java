@@ -23,7 +23,7 @@ public class Main {
         /*
             Constructor untuk membuat object Player
             contoh:
-            new Player("catherine", 340)
+            new Player("capytanic", 340)
          */
         Player(String nama, int score) {
             this.nama = nama;
@@ -117,10 +117,10 @@ public class Main {
             Di sini kita membuat 4 object Player sekaligus.
          */
         players.addAll(Arrays.asList(
-                new Player("catherine", 340),
-                new Player("zalovaurora", 390),
-                new Player("jessica", 310),
-                new Player("livia", 370)
+                new Player("capytanic", 340),
+                new Player("capyking", 390),
+                new Player("capypoter", 310),
+                new Player("capyjayen", 370)
         ));
 
         /*
