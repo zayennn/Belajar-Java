@@ -42,3 +42,35 @@ public class Main {
         }
     }
 }
+
+
+/*
+    static class Player implements Comparable<Player> :
+    itu artinya class Player punya aturan perbandingan, java sekarang tau cara bandingin player dengan player
+
+    public int compareTo(Player other) :
+    artinya :
+    this = object sekarang
+    other = object yang dibandingkan
+
+    logic perbandingan :
+    return this.other - this.score;
+
+    kenapa begini ? karena descending ( terbesar dulu ), contoh :
+
+    this.score = 340
+    this.score = 390
+
+    390 - 340 = 50 ( positif )
+    artinya :
+    390 lebih besar → pindah ke depan
+
+    kalau mau ascending :
+    return this.score - other.score;
+
+
+    Collections.sort(players);
+    ini method java untuk mengurutkan list
+    karena Player sudah implements Comparable, java tau harus pake compateTo()
+
+*/
