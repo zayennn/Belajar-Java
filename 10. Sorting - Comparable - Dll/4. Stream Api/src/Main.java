@@ -22,4 +22,8 @@ public class Main {
                     """, nama, score);
         }
     }
+
+    public static void main(String[] args) {
+
+    }
 }
