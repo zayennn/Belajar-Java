@@ -43,8 +43,11 @@ public class Main {
                 new Player("capyjayen", 290)
         ));
 
+//        players.sort adalah method dari ArrayList yang isi nya kita kasih Comparator
+//        new Comparator<Player>() adalah aturan membandingkan player
         players.sort(new Comparator<Player>() {
             @Override
+//            compare(Player a, Player b) artinya membandingkan object a dengan object b
             public int compare(Player a, Player b) {
                 return b.score - a.score;
             }

@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/01 - Fundamental Java/01 - Fundamental Java.iml" filepath="$PROJECT_DIR$/01 - Fundamental Java/01 - Fundamental Java.iml" />
       <module fileurl="file://$PROJECT_DIR$/02 - Input User Operator Perhitungan/02 - Input User Operator Perhitungan.iml" filepath="$PROJECT_DIR$/02 - Input User Operator Perhitungan/02 - Input User Operator Perhitungan.iml" />
-      <module fileurl="file://$PROJECT_DIR$/10. Sorting - Comparable - Dll/02. Comparator/02. Comparator.iml" filepath="$PROJECT_DIR$/10. Sorting - Comparable - Dll/02. Comparator/02. Comparator.iml" />
       <module fileurl="file://$PROJECT_DIR$/03 - if else x logika x keputusan program/03 - if else x logika x keputusan program.iml" filepath="$PROJECT_DIR$/03 - if else x logika x keputusan program/03 - if else x logika x keputusan program.iml" />
       <module fileurl="file://$PROJECT_DIR$/04 - Looping/04 - Looping.iml" filepath="$PROJECT_DIR$/04 - Looping/04 - Looping.iml" />
       <module fileurl="file://$PROJECT_DIR$/05 - Array/05 - Array.iml" filepath="$PROJECT_DIR$/05 - Array/05 - Array.iml" />
@@ -28,6 +27,7 @@
       <module fileurl="file://$PROJECT_DIR$/06 - OOP/Latihan OOP/2/2.iml" filepath="$PROJECT_DIR$/06 - OOP/Latihan OOP/2/2.iml" />
       <module fileurl="file://$PROJECT_DIR$/05 - Array/2. Akses Data Array/2. Akses Data Array.iml" filepath="$PROJECT_DIR$/05 - Array/2. Akses Data Array/2. Akses Data Array.iml" />
       <module fileurl="file://$PROJECT_DIR$/09 - Generics Dan Collections/2. ArrayList/2. ArrayList.iml" filepath="$PROJECT_DIR$/09 - Generics Dan Collections/2. ArrayList/2. ArrayList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/10. Sorting - Comparable - Dll/2. Comparator/2. Comparator.iml" filepath="$PROJECT_DIR$/10. Sorting - Comparable - Dll/2. Comparator/2. Comparator.iml" />
       <module fileurl="file://$PROJECT_DIR$/08 - Implements Dan Multiple Behavior/Latihan 08/2. Diskon/2. Diskon.iml" filepath="$PROJECT_DIR$/08 - Implements Dan Multiple Behavior/Latihan 08/2. Diskon/2. Diskon.iml" />
       <module fileurl="file://$PROJECT_DIR$/03 - if else x logika x keputusan program/2. If Else/2. If Else.iml" filepath="$PROJECT_DIR$/03 - if else x logika x keputusan program/2. If Else/2. If Else.iml" />
       <module fileurl="file://$PROJECT_DIR$/2. Object/2. Object.iml" filepath="$PROJECT_DIR$/2. Object/2. Object.iml" />
@@ -43,6 +43,7 @@
       <module fileurl="file://$PROJECT_DIR$/09 - Generics Dan Collections/3. HashMap - Key Value/3. HashMap - Key Value.iml" filepath="$PROJECT_DIR$/09 - Generics Dan Collections/3. HashMap - Key Value/3. HashMap - Key Value.iml" />
       <module fileurl="file://$PROJECT_DIR$/03 - if else x logika x keputusan program/3. If Else If/3. If Else If.iml" filepath="$PROJECT_DIR$/03 - if else x logika x keputusan program/3. If Else If/3. If Else If.iml" />
       <module fileurl="file://$PROJECT_DIR$/08 - Implements Dan Multiple Behavior/Latihan 08/3. Inheritance x Interface/3. Inheritance x Interface.iml" filepath="$PROJECT_DIR$/08 - Implements Dan Multiple Behavior/Latihan 08/3. Inheritance x Interface/3. Inheritance x Interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/10. Sorting - Comparable - Dll/3. Lambda Expression/3. Lambda Expression.iml" filepath="$PROJECT_DIR$/10. Sorting - Comparable - Dll/3. Lambda Expression/3. Lambda Expression.iml" />
       <module fileurl="file://$PROJECT_DIR$/06 - OOP/3. Method Dalam Class/3. Method Dalam Class.iml" filepath="$PROJECT_DIR$/06 - OOP/3. Method Dalam Class/3. Method Dalam Class.iml" />
       <module fileurl="file://$PROJECT_DIR$/07 - Inheritance Dan Polymorphism/3. Method Overriding/3. Method Overriding.iml" filepath="$PROJECT_DIR$/07 - Inheritance Dan Polymorphism/3. Method Overriding/3. Method Overriding.iml" />
       <module fileurl="file://$PROJECT_DIR$/02 - Input User Operator Perhitungan/3. Operator Perbandingan/3. Operator Perbandingan.iml" filepath="$PROJECT_DIR$/02 - Input User Operator Perhitungan/3. Operator Perbandingan/3. Operator Perbandingan.iml" />
