@@ -37,6 +37,7 @@ public class Main {
 //        players.stream() : mengubah ArrayList<Player> menjadi Stream<Player>
 //        Stream = aliran data
         players.stream()
+                .map(player -> player.score + 15)
                 .filter(p -> p.score > 350)
                 .forEach(p -> p.getInfo());
     }
