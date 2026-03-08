@@ -15,6 +15,11 @@ public class Main {
             this.score = score;
         }
 
-
+        void getInfo() {
+            System.out.printf("""
+                    nama    : %s
+                    score   : %d
+                    """, nama, score);
+        }
     }
 }
