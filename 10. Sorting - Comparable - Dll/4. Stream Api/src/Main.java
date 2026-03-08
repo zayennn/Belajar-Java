@@ -24,6 +24,6 @@ public class Main {
     }
 
     public static void main(String[] args) {
-
+        ArrayList<Player> players = new ArrayList<>();
     }
 }
