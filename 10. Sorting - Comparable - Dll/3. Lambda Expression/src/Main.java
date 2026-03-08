@@ -41,7 +41,7 @@ public class Main {
         players.sort((a, b) -> b.score - a.score);
 
         for (Player p : players) {
-
+            p.getInfo();
         }
     }
 }
