@@ -7,6 +7,7 @@
 */
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Main {
     static class Player {
@@ -28,6 +29,13 @@ public class Main {
     }
 
     public static void main(String[] args) {
+        ArrayList<Player> players = new ArrayList<>();
 
+        players.addAll(Arrays.asList(
+                new Player("capytanic", 370),
+                new Player("capyking", 370),
+                new Player("capytanic", 370),
+                new Player("capytanic", 370),
+        ));
     }
 }
