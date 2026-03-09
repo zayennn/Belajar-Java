@@ -26,6 +26,10 @@ public class Main {
 
     public static void main(String[] args) {
         ArrayList<Mahasiswa> mahasiswas = new ArrayList<>();
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Masukan jumlah mahasiswa : ");
+        int jumlah_mahasiswa = input.nextInt();
 
     }
 }
