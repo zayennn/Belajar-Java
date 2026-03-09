@@ -38,8 +38,10 @@ public class Main {
             String nama = input.nextLine();
             System.out.print("Masukan nim mahasiswa   : ");
             int nim = input.nextInt();
+            input.nextLine();
             System.out.print("Masukan nilai mahasiswa : ");
             int nilai = input.nextInt();
+            input.nextLine();
 
             mahasiswas.add(new Mahasiswa(nama, nim, nilai));
         }
