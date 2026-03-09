@@ -44,6 +44,8 @@ public class Main {
             int nilai = input.nextInt();
             input.nextLine();
 
+            System.out.println("");
+
             mahasiswas.add(new Mahasiswa(nama, nim, nilai));
         }
 
