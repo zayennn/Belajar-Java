@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -28,12 +29,15 @@ public class Main {
         ArrayList<Mahasiswa> mahasiswas = new ArrayList<>();
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Masukan jumlah mahasiswa : ");
-        int jumlah_mahasiswa = input.nextInt();
-        input.nextLine();
+        mahasiswas.addAll(Arrays.asList(
+                new Mahasiswa("mhs1", 15250506, 100),
+                new Mahasiswa("mhs2", 15250507, 90),
+                new Mahasiswa("mhs3", 15250508, 80),
+                new Mahasiswa("mhs4", 15250509, 70)
+        ));
 
-        while (true) {
-
+        for (Mahasiswa mhs : mahasiswas) {
+            mhs.getInfo();
         }
     }
 }
