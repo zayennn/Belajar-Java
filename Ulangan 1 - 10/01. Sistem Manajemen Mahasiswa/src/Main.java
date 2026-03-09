@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Main {
     static class Mahasiswa {
@@ -23,7 +24,8 @@ public class Main {
         }
     }
 
-    ArrayList<Mahasiswa> mahasiswas = new ArrayList<>();
+    public static void main(String[] args) {
+        ArrayList<Mahasiswa> mahasiswas = new ArrayList<>();
 
-
+    }
 }
