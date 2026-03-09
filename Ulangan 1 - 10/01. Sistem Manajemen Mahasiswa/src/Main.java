@@ -61,7 +61,7 @@ public class Main {
         for (Mahasiswa mhs : mahasiswas) {
             mhs.getInfo();
             total += mhs.nilai;
-            mhs.getRataRata(total, jum_mahasiswa);
+            System.out.println("Nilai rata rata mahasiswa adalah = " + mhs.getRataRata(total, jum_mahasiswa));
         }
     }
 }
