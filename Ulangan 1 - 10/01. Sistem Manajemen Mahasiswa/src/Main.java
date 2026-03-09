@@ -37,10 +37,10 @@ public class Main {
         for (int i = 0; i < jum_mahasiswa; i++) {
             System.out.printf("Masukan nama mahasiswa ke - %d  : ", i + 1);
             String nama = input.nextLine();
-            System.out.print("Masukan nim mahasiswa        : ");
+            System.out.print("Masukan nim mahasiswa          : ");
             int nim = input.nextInt();
             input.nextLine();
-            System.out.print("Masukan nilai mahasiswa      : ");
+            System.out.print("Masukan nilai mahasiswa        : ");
             int nilai = input.nextInt();
             input.nextLine();
 
