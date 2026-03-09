@@ -31,7 +31,7 @@ public class Main {
 
         @Override
         public int compareTo(Mahasiswa other) {
-            return this.nilai - other.nilai;
+            return other.nilai - this.nilai;
         }
     }
 
