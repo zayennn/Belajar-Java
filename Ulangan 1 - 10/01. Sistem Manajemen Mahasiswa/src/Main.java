@@ -59,9 +59,11 @@ public class Main {
         System.out.println("============== Mahasiswa ==============");
         for (Mahasiswa mhs : mahasiswas) {
             mhs.getInfo();
-            total += mhs.nilai[count];
+            total += mhs.nilai;
             count++;
             //            mhs.getRataRata(mhs.nilai);
         }
+
+        System.out.println(total);
     }
 }
