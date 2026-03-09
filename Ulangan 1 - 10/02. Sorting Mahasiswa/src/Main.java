@@ -1,8 +1,9 @@
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.Collections;
 
 public class Main {
-    static class Mahasiswa {
+    static class Mahasiswa implements Comparable<Mahasiswa> {
         String nama;
         int nim;
         int nilai;
@@ -26,6 +27,11 @@ public class Main {
                     NILAI   : %d
                     
                     """, nama, nim, nilai);
+        }
+
+        @Override
+        public int compareTo(Mahasiswa other) {
+            return this.nilai - other.nilai;
         }
     }
 
@@ -53,6 +59,8 @@ public class Main {
 
             mahasiswas.add(new Mahasiswa(nama, nim, nilai));
         }
+
+        Collections.sort(mahasiswas);
 
         int total = 0;
 
