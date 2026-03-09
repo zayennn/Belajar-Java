@@ -29,15 +29,13 @@ public class Main {
         ArrayList<Mahasiswa> mahasiswas = new ArrayList<>();
         Scanner input = new Scanner(System.in);
 
-        mahasiswas.addAll(Arrays.asList(
-                new Mahasiswa("mhs1", 15250506, 100),
-                new Mahasiswa("mhs2", 15250507, 90),
-                new Mahasiswa("mhs3", 15250508, 80),
-                new Mahasiswa("mhs4", 15250509, 70)
-        ));
 
-        for (Mahasiswa mhs : mahasiswas) {
-            mhs.getInfo();
+        System.out.print("Masukan jumlah mahasiswa : ");
+        int jum_mahasiswa = input.nextInt();
+        input.nextLine();
+
+        while (true) {
+
         }
     }
 }
