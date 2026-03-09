@@ -13,7 +13,17 @@ public class Main {
         }
 
         void getInfo() {
+            System.out.printf("""
+                    ============== Mahasiswa ==============
+                    NAMA    : %s
+                    NIM     : %d
+                    NILAI   : %d
 
+                    """, nama, nim, nilai);
         }
     }
+
+    ArrayList<Mahasiswa> mahasiswas = new ArrayList<>();
+
+
 }
