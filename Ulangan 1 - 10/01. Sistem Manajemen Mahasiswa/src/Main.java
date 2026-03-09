@@ -54,11 +54,14 @@ public class Main {
         }
 
         int total = 0;
+        int count = 0;
 
         System.out.println("============== Mahasiswa ==============");
         for (Mahasiswa mhs : mahasiswas) {
             mhs.getInfo();
-            mhs.getRataRata(mhs.nilai);
+            total += mhs.nilai[count];
+            count++;
+            //            mhs.getRataRata(mhs.nilai);
         }
     }
 }
