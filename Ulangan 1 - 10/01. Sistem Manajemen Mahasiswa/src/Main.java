@@ -20,7 +20,7 @@ public class Main {
                     NAMA    : %s
                     NIM     : %d
                     NILAI   : %d
-
+                    
                     """, nama, nim, nilai);
         }
     }
@@ -34,7 +34,7 @@ public class Main {
         int jum_mahasiswa = input.nextInt();
         input.nextLine();
 
-        while (true) {
+        for (int i = 0; i < jum_mahasiswa; i++) {
 
         }
     }
