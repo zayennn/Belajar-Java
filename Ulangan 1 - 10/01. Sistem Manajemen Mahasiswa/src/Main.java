@@ -32,9 +32,10 @@ public class Main {
         System.out.print("Masukan jumlah mahasiswa : ");
         int jum_mahasiswa = input.nextInt();
         input.nextLine();
+        System.out.println("");
 
         for (int i = 0; i < jum_mahasiswa; i++) {
-            System.out.print("Masukan nama mahasiswa   : ");
+            System.out.printf("Masukan nama mahasiswa ke - %d  : ", i + 1);
             String nama = input.nextLine();
             System.out.print("Masukan nim mahasiswa    : ");
             int nim = input.nextInt();
