@@ -30,6 +30,10 @@ public class Main {
 
         System.out.print("Masukan jumlah mahasiswa : ");
         int jumlah_mahasiswa = input.nextInt();
+        input.nextLine();
 
+        while (true) {
+
+        }
     }
 }
