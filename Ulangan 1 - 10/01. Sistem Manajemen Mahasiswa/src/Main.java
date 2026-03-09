@@ -14,6 +14,10 @@ public class Main {
             this.nilai = nilai;
         }
 
+        void  getRataRata(int total) {
+            System.out.println("total nilai = " + total);
+        }
+
         void getInfo() {
             System.out.printf("""
                     NAMA    : %s
@@ -49,9 +53,12 @@ public class Main {
             mahasiswas.add(new Mahasiswa(nama, nim, nilai));
         }
 
+        int total = 0;
+
         System.out.println("============== Mahasiswa ==============");
         for (Mahasiswa mhs : mahasiswas) {
             mhs.getInfo();
+            mhs.getRataRata(mhs.nilai);
         }
     }
 }
