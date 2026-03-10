@@ -19,6 +19,9 @@ public class Main {
             while(true) {
                 System.out.println("""
                         ==================== Menu Option ====================
+                        1. Tampikan semua items
+                        2. Tampilkan total semua items
+                        3. Tampilkan items dengan jumlah terbanyak
                         """);
             }
         }
