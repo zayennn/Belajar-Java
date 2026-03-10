@@ -8,6 +8,7 @@ public class Main {
         HashMap<String, Integer> items = new HashMap<>();
         Scanner input = new Scanner(System.in);
         int total = 0;
+        int max = 0;
 
         items.putAll(Map.of(
                 "Potions", 10,
