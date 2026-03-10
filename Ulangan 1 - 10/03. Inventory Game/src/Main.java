@@ -14,8 +14,10 @@ public class Main {
 
         for (Map.Entry<String, Integer> i : items.entrySet()) {
             System.out.printf("""
-                    """);
-            System.out.println("");
+                    Items   : %s
+                    Jumlah  : %d
+
+                    """, i.getKey(), i.getValue());
         }
     }
 }
