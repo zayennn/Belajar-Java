@@ -58,7 +58,7 @@ public class Main {
                         }
                     }
                     System.out.println("Item terbanyak : " + namaMax);
-                    System.out.println("Jumlah item : " + max);
+                    System.out.println("Jumlah item : \n" + max);
                     break;
             }
         }
