@@ -7,6 +7,7 @@ public class Main {
     public static void main(String[] args) {
         HashMap<String, Integer> items = new HashMap<>();
         Scanner input = new Scanner(System.in);
+        int total = 0;
 
         items.putAll(Map.of(
                 "Potions", 10,
@@ -16,6 +17,10 @@ public class Main {
         ));
 
         for (Map.Entry<String, Integer> i : items.entrySet()) {
+
+
+
+
             while (true) {
                 System.out.println("""
                         ==================== Menu Option ====================
@@ -35,6 +40,9 @@ public class Main {
                                 Jumlah  : %d
                                 
                                 """, i.getKey(), i.getValue());
+                        break;
+                    case 2 :
+
                 }
             }
         }
