@@ -39,7 +39,6 @@ public class Main {
                                 Jumlah  : %d
                                 
                                 """, i.getKey(), i.getValue());
-                        break;
                     case 2 :
                         System.out.println(total);
                         break;
