@@ -60,6 +60,11 @@ public class Main {
                     System.out.println("Item terbanyak : " + namaMax);
                     System.out.println("Jumlah item : \n" + max);
                     break;
+                case 4 :
+                    System.out.println("Terimakasih...\n");
+                    break;
+                default :
+                    throw new IllegalArgumentException("Opsi menu tidak ditemukan");
             }
         }
     }
