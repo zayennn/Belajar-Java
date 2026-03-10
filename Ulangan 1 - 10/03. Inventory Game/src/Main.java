@@ -17,32 +17,31 @@ public class Main {
                 "Arrow", 25
         ));
 
-        for (Map.Entry<String, Integer> i : items.entrySet()) {
-            total += i.getValue();
+        while (true) {
+            System.out.println("""
+                    ==================== Menu Option ====================
+                    1. Tampikan semua items
+                    2. Tampilkan total semua items
+                    3. Tampilkan items dengan jumlah terbanyak
+                    """);
 
-            while (true) {
-                System.out.println("""
-                        ==================== Menu Option ====================
-                        1. Tampikan semua items
-                        2. Tampilkan total semua items
-                        3. Tampilkan items dengan jumlah terbanyak
-                        """);
+            System.out.print("Masukan pilihan anda : ");
+            int menu = input.nextInt();
+            input.nextLine();
 
-                System.out.print("Masukan pilihan anda : ");
-                int menu = input.nextInt();
-                input.nextLine();
-
-                switch (menu) {
-                    case 1:
+            switch (menu) {
+                case 1:
+                    for (Map.Entry<String, Integer> i : items.entrySet()) {
                         System.out.printf("""
                                 Items   : %s
                                 Jumlah  : %d
                                 
                                 """, i.getKey(), i.getValue());
-                    case 2 :
-                        System.out.println(total);
-                        break;
-                }
+                    }
+                    break;
+                case 2:
+                    System.out.println(total);
+                    break;
             }
         }
     }
