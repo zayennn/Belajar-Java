@@ -8,6 +8,7 @@ public class Main {
         HashMap<String, Integer> items = new HashMap<>();
         Scanner input = new Scanner(System.in);
         int total = 0;
+        String namaMax;
         int max = 0;
 
         items.putAll(Map.of(
@@ -48,6 +49,16 @@ public class Main {
                     System.out.println("Total jumlah items di inventory kamu adalah : " + total);
 
                     break;
+                case 3 :
+                    for (Map.Entry<String, Integer> i : items.entrySet()) {
+                        if (i.getValue() > max) {
+                            max = i.getValue();
+                            namaMax = i.getKey();
+
+                            System.out.println("Item terbanyak : " + namaMax);
+                            System.out.println("Jumlah item : " + max);
+                        }
+                    }
             }
         }
     }
