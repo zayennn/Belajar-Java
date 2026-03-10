@@ -58,7 +58,7 @@ public class Main {
                         }
                     }
                     System.out.println("Item terbanyak : " + namaMax);
-                    System.out.println("Jumlah item : \n" + max);
+                    System.out.println("Jumlah item : " + max + "\n");
                     break;
                 case 4 :
                     System.out.println("Terimakasih...\n");
