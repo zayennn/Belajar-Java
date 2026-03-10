@@ -18,9 +18,7 @@ public class Main {
         ));
 
         for (Map.Entry<String, Integer> i : items.entrySet()) {
-
-
-
+            total += i.getValue();
 
             while (true) {
                 System.out.println("""
@@ -43,7 +41,8 @@ public class Main {
                                 """, i.getKey(), i.getValue());
                         break;
                     case 2 :
-
+                        System.out.println(total);
+                        break;
                 }
             }
         }
