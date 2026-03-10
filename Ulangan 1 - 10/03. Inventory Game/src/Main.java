@@ -16,7 +16,7 @@ public class Main {
         ));
 
         for (Map.Entry<String, Integer> i : items.entrySet()) {
-            while(true) {
+            while (true) {
                 System.out.println("""
                         ==================== Menu Option ====================
                         1. Tampikan semua items
@@ -27,6 +27,15 @@ public class Main {
                 System.out.print("Masukan pilihan anda : ");
                 int menu = input.nextInt();
                 input.nextLine();
+
+                switch (menu) {
+                    case 1:
+                        System.out.printf("""
+                                Items   : %s
+                                Jumlah  : %d
+                                
+                                """, i.getKey(), i.getValue());
+                }
             }
         }
     }
