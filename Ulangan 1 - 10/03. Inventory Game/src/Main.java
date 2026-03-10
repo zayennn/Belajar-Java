@@ -40,7 +40,9 @@ public class Main {
                     }
                     break;
                 case 2:
-                    System.out.println(total);
+                    for (int v : items.values()) {
+                        total += v;
+                    }
                     break;
             }
         }
