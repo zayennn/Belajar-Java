@@ -43,6 +43,9 @@ public class Main {
                     for (int v : items.values()) {
                         total += v;
                     }
+
+                    System.out.println(total);
+
                     break;
             }
         }
