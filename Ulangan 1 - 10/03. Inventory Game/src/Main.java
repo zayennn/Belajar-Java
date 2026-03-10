@@ -23,6 +23,10 @@ public class Main {
                         2. Tampilkan total semua items
                         3. Tampilkan items dengan jumlah terbanyak
                         """);
+
+                System.out.print("Masukan pilihan anda : ");
+                int menu = input.nextInt();
+                input.nextLine();
             }
         }
     }
