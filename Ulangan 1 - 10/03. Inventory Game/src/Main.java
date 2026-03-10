@@ -12,6 +12,10 @@ public class Main {
                 "Arrow", 25
         ));
 
-        System.out.println(items);
+        for (Map.Entry<String, Integer> i : items.entrySet()) {
+            System.out.printf("Items : %s\n", i.getKey());
+            System.out.printf("Items : %d\n", i.getValue());
+            System.out.println("");
+        }
     }
 }
