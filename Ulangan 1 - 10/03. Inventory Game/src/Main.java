@@ -1,9 +1,12 @@
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Scanner;
+
 
 public class Main {
     public static void main(String[] args) {
         HashMap<String, Integer> items = new HashMap<>();
+        Scanner input = new Scanner(System.in);
 
         items.putAll(Map.of(
                 "Potions", 10,
@@ -13,11 +16,11 @@ public class Main {
         ));
 
         for (Map.Entry<String, Integer> i : items.entrySet()) {
-            System.out.printf("""
-                    Items   : %s
-                    Jumlah  : %d
-
-                    """, i.getKey(), i.getValue());
+            while(true) {
+                System.out.println("""
+                        ==================== Menu Option ====================
+                        """);
+            }
         }
     }
 }
