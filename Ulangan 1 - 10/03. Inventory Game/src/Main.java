@@ -2,19 +2,16 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Main {
-    class Items<I> {
-        private I nama;
-        private I jumlah;
-
-        Items(I nama, I jumlah) {
-            this.nama = nama;
-            this.jumlah = jumlah;
-        }
-
-
-    }
-
     public static void main(String[] args) {
-        HashMap<Items> items = new HashMap<>();
+        HashMap<String, Integer> items = new HashMap<>();
+
+        items.putAll(Map.of(
+                "Potions", 10,
+                "Sword", 1,
+                "Shield", 1,
+                "Arrow", 25
+        ));
+
+        System.out.println(items);
     }
 }
