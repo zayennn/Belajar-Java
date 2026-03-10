@@ -62,7 +62,7 @@ public class Main {
                     break;
                 case 4 :
                     System.out.println("Terimakasih...\n");
-                    break;
+                    return;
                 default :
                     throw new IllegalArgumentException("Opsi menu tidak ditemukan");
             }
