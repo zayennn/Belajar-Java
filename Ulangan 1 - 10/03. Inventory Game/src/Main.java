@@ -8,7 +8,7 @@ public class Main {
         HashMap<String, Integer> items = new HashMap<>();
         Scanner input = new Scanner(System.in);
         int total = 0;
-        String namaMax;
+        String namaMax ="";
         int max = 0;
 
         items.putAll(Map.of(
@@ -55,10 +55,11 @@ public class Main {
                             max = i.getValue();
                             namaMax = i.getKey();
 
-                            System.out.println("Item terbanyak : " + namaMax);
-                            System.out.println("Jumlah item : " + max);
                         }
                     }
+                    System.out.println("Item terbanyak : " + namaMax);
+                    System.out.println("Jumlah item : " + max);
+                    break;
             }
         }
     }
