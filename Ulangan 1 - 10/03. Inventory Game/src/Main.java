@@ -23,6 +23,7 @@ public class Main {
                     1. Tampikan semua items
                     2. Tampilkan total semua items
                     3. Tampilkan items dengan jumlah terbanyak
+                    4. Keluar
                     """);
 
             System.out.print("Masukan pilihan anda : ");
