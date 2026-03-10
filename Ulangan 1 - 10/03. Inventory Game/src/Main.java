@@ -44,7 +44,7 @@ public class Main {
                         total += v;
                     }
 
-                    System.out.println(total);
+                    System.out.println("Total jumlah items di inventory kamu adalah : " + total);
 
                     break;
             }
