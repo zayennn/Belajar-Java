@@ -88,6 +88,14 @@ public class Main {
                     }
 
                     System.out.println(Products.rupiah.format(max));
+                    break;
+
+                case 5 :
+                    System.out.println("Terimakasih....");
+                    return;
+
+                default:
+                    throw new IllegalArgumentException("Menu tidak ada...");
             }
         }
     }
