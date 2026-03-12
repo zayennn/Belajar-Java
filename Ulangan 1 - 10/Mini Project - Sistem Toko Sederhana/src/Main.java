@@ -1,11 +1,22 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
+import java.text.NumberFormat;
+import java.util.Locale;
 
 public class Main {
     static class Products {
-        String nama;
-        int harga;
+        private String nama;
+        private int harga;
+
+        private static Locale indonesia = new Locale("id", "ID");
+        private static NumberFormat rupiah;
+
+        static {
+            rupiah = NumberFormat.getCurrencyInstance(indonesia);
+            rupiah.setMaximumFractionDigits(0);
+            rupiah.setMaximumFractionDigits(0);
+        }
 
         Products(String nama, int harga) {
             this.nama = nama;
@@ -15,14 +26,17 @@ public class Main {
         void getInfo() {
             System.out.printf("""
                     Nama Product    : %s
-                    Harga Product   : %d
-                    """, nama, harga);
+                    Harga Product   : %s
+                    
+                    """, nama, rupiah.format(harga));
         }
     }
 
     public static void main(String[] args) {
         ArrayList<Products> products = new ArrayList<>();
         Scanner input = new Scanner(System.in);
+        int total = 0;
+        int max = 0;
 
         while (true) {
             System.out.println("""
@@ -57,6 +71,23 @@ public class Main {
                     for (Products p : products) {
                         p.getInfo();
                     }
+                    break;
+
+                case 3 :
+                    for (Products p : products) {
+                        total += p.harga;
+                    }
+                    System.out.println(Products.rupiah.format(total));
+                    break;
+
+                case 4 :
+                    for (Products p : products ) {
+                        if (p.harga > max) {
+                            max = p.harga;
+                        }
+                    }
+
+                    System.out.println(Products.rupiah.format(max));
             }
         }
     }
