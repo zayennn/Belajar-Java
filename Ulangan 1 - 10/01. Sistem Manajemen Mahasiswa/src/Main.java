@@ -1,5 +1,8 @@
-import java.util.ArrayList;
+import jdk.dynalink.StandardNamespace;
+
+import java.util.Arrays;
 import java.util.Scanner;
+import java.util.ArrayList;
 
 public class Main {
     static class Mahasiswa {
@@ -13,54 +16,52 @@ public class Main {
             this.nilai = nilai;
         }
 
-        int getRataRata(int total, int jum) {
-            int rata_rata = total / jum;
-
-            return rata_rata;
+        int getNilaiRataRata(int total_nilai, int jumlah_mahasiswa) {
+            return total_nilai / jumlah_mahasiswa;
         }
 
         void getInfo() {
             System.out.printf("""
-                    NAMA    : %s
-                    NIM     : %d
-                    NILAI   : %d
+                    Nama    : %s
+                    Nim     : %d
+                    Nilai   : %d
                     
                     """, nama, nim, nilai);
         }
     }
 
     public static void main(String[] args) {
-        ArrayList<Mahasiswa> mahasiswas = new ArrayList<>();
         Scanner input = new Scanner(System.in);
-
+        ArrayList<Mahasiswa> mahasiswas = new ArrayList<>();
+        int total_nilai = 0;
 
         System.out.print("Masukan jumlah mahasiswa : ");
-        int jum_mahasiswa = input.nextInt();
+        int jumlah_mahasiswa = input.nextInt();
         input.nextLine();
-        System.out.println("");
 
-        for (int i = 0; i < jum_mahasiswa; i++) {
-            System.out.printf("Masukan nama mahasiswa ke - %d  : ", i + 1);
+        for (int i = 0; i < jumlah_mahasiswa; i++) {
+            System.out.printf("Masukan nama mahasiswa ke - %d : ", i + 1);
             String nama = input.nextLine();
-            System.out.print("Masukan nim mahasiswa          : ");
+
+            System.out.printf("Masukan nim mahasiswa : ");
             int nim = input.nextInt();
             input.nextLine();
-            System.out.print("Masukan nilai mahasiswa        : ");
+
+            System.out.printf("Masukan nilai mahasiswa : ");
             int nilai = input.nextInt();
             input.nextLine();
 
-            System.out.println("");
-
-            mahasiswas.add(new Mahasiswa(nama, nim, nilai));
+            mahasiswas.addAll(Arrays.asList(
+                    new Mahasiswa(nama, nim, nilai)
+            ));
         }
 
-        int total = 0;
-
-        System.out.println("============== Mahasiswa ==============");
+        System.out.println("==================== Daftar Mahasiswa ====================");
         for (Mahasiswa mhs : mahasiswas) {
+            total_nilai += mhs.nilai;
+
             mhs.getInfo();
-            total += mhs.nilai;
-            System.out.println("Nilai rata rata mahasiswa adalah = " + mhs.getRataRata(total, jum_mahasiswa));
+            System.out.println("Rata rata nilai mahasiswa : " + mhs.getNilaiRataRata(total_nilai, jumlah_mahasiswa));
         }
     }
 }
