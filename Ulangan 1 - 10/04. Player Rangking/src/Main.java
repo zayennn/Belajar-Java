@@ -32,11 +32,8 @@ public class Main {
         ));
 
         players.sort((a, b) -> b.score - a.score);
-
-        for (Player player : players) {
-            if (player.score >= 300) {
-                player.getInfo();
-            }
-        }
+        players.stream()
+                .filter(player -> player.score >= 300)
+                .forEach(player -> player.getInfo());
     }
 }
