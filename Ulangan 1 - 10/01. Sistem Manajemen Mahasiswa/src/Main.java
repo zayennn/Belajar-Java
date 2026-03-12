@@ -16,10 +16,6 @@ public class Main {
             this.nilai = nilai;
         }
 
-        int getNilaiRataRata(int total_nilai, int jumlah_mahasiswa) {
-            return total_nilai / jumlah_mahasiswa;
-        }
-
         void getInfo() {
             System.out.printf("""
                     Nama    : %s
@@ -56,12 +52,18 @@ public class Main {
             ));
         }
 
+        for (Mahasiswa mhs : mahasiswas) {
+            total_nilai += mhs.nilai;
+        }
+
+        int nilai_rata_rata = total_nilai / jumlah_mahasiswa;
+
         System.out.println("==================== Daftar Mahasiswa ====================");
         for (Mahasiswa mhs : mahasiswas) {
             total_nilai += mhs.nilai;
 
             mhs.getInfo();
-            System.out.println("Rata rata nilai mahasiswa : " + mhs.getNilaiRataRata(total_nilai, jumlah_mahasiswa));
+            System.out.println("Rata rata nilai mahasiswa : " + nilai_rata_rata);
         }
     }
 }
