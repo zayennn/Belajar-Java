@@ -6,8 +6,8 @@ public class Main {
     public static void main(String[] args) {
         Hitung penjumlahan = ((x, y) -> x + y);
         Hitung perkalian = ((x, y) -> x * y);
-//        kalau gapake lambda code nya bisa panjang, contoh :
 
+//        kalau gapake lambda code nya bisa panjang, contoh :
         Hitung pengurangan = new Hitung() {
             @Override
             public int operasi(int x, int y) {
