@@ -25,7 +25,6 @@
     ambil semua player
 
     filter score > 300
-
     sort descending
     tampilkan
 */
