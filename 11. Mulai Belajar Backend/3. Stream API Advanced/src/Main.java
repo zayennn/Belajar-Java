@@ -7,5 +7,10 @@
      → hasil
 
      Operasi yang sering dipakai:
-
+     filter()
+     map()
+     sorted()
+     limit()
+     collect()
+     reduce()
 */
