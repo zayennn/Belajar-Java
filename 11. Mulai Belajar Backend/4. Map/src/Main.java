@@ -20,4 +20,8 @@ public class Main {
             this.score = score;
         }
     }
+
+    public static void main(String[] args) {
+        ArrayList<Player> players = new ArrayList<>();
+    }
 }
