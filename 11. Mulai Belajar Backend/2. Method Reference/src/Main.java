@@ -22,4 +22,16 @@ public class Main {
             System.out.println(nama + " | " + score);
         }
     }
+
+    public static void main(String[] args) {
+        ArrayList<Player> players = new ArrayList<>();
+
+        players.add(new Player("player 1", 350));
+        players.add(new Player("player 2", 321));
+        players.add(new Player("player 3", 333));
+        players.add(new Player("player 4", 342));
+        players.add(new Player("player 5", 304));
+
+        players.forEach(Player::getInfo);
+    }
 }
