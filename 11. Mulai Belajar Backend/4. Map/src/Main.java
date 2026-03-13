@@ -13,6 +13,10 @@ import java.util.ArrayList;
 public class Main {
     static class Player {
         String nama;
-        String score;
+        int score;
+
+        Player(String nama; int Score) {
+
+        }
     }
 }
