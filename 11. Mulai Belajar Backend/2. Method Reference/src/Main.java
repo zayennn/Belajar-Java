@@ -4,3 +4,4 @@
 // players.forEach(Player::getInfo()); → ini disebut method reference
 // bentuk umumnya :
 // Class::method
+// contoh program :
