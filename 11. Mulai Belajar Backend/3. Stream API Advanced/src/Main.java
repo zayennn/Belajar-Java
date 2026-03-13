@@ -13,4 +13,7 @@
      limit()
      collect()
      reduce()
+
+     Contoh Stream Pipeline :
+
 */
