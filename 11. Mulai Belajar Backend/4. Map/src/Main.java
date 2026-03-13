@@ -30,5 +30,9 @@ public class Main {
         players.add(new Player("player 4", 342));
         players.add(new Player("player 5", 304));
 
+        players.stream()
+                .filter(player -> player.score > 320)
+                .map(player -> player.nama)
+                .forEach(System.out::println);
     }
 }
