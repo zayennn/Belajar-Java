@@ -5,5 +5,8 @@ public class Main {
 
     public static void main(String[] args) {
         Hitung penjumlahan = ((x, y) -> x + y);
+        Hitung perkalian = ((x, y) -> x * y);
+
+
     }
 }
