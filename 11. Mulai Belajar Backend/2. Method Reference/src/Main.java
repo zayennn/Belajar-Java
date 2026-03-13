@@ -17,5 +17,9 @@ public class Main {
             this.nama = nama;
             this.score = score;
         }
+
+        void getInfo() {
+            System.out.println(nama + " | " + score);
+        }
     }
 }
