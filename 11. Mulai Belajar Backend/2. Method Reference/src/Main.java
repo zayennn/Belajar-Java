@@ -40,4 +40,4 @@ public class Main {
 // pada setiap player jalankan method getInfo
 // kalau versi lambda :
 // players.forEach(p -> p.getInfo());
-// hasil nya sama saja cuma
+// hasil nya sama saja cuma method reference lebih pendek
