@@ -35,3 +35,5 @@ public class Main {
         players.forEach(Player::getInfo);
     }
 }
+
+// players.forEach(Player::getInfo);
