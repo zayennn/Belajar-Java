@@ -36,4 +36,5 @@ public class Main {
     }
 }
 
-// players.forEach(Player::getInfo);
+// players.forEach(Player::getInfo); artinya adalah :
+// pada setiap player jalankan method getInfo
