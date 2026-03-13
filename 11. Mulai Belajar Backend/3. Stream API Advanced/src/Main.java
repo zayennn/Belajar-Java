@@ -15,5 +15,8 @@
      reduce()
 
      Contoh Stream Pipeline :
-
+     players.stream()
+       .filter(p -> p.score > 300)
+       .sorted((a,b) -> b.score - a.score)
+       .forEach(Player::tampil);
 */
