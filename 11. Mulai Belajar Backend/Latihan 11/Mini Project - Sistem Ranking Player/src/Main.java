@@ -35,5 +35,10 @@ public class Main {
                 .filter(player -> player.score > 300)
                 .map(player -> player.nama)
                 .forEach(System.out::println);
+
+        List<Player> total_score =
+                players.stream()
+                        .filter(player -> player.score)
+                        .collect(Collectors.toList());
     }
 }
