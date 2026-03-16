@@ -2,6 +2,8 @@
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class Main {
     static class Player {
@@ -22,13 +24,16 @@ public class Main {
         ArrayList<Player> players = new ArrayList<>();
 
         players.addAll(Arrays.asList(
-                new Player("player 1", 250),
-                new Player("player 2", 226),
-                new Player("player 3", 375),
-                new Player("player 4", 410),
-                new Player("player 5", 300)
+                new Player("Auron", 450),
+                new Player("Luna", 320),
+                new Player("Kira", 280),
+                new Player("Zane", 500),
+                new Player("Rex", 200)
         ));
 
-
+        players.stream()
+                .map(player -> new Player(player.nama, player.score))
+                .filter(player -> player.score > 300)
+                .forEach(Player::tampil);
     }
 }
