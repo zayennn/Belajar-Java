@@ -7,5 +7,9 @@ public class Main {
         OperatiMatematika penjumlahan = ((a, b) -> a + b);
         OperatiMatematika pengurangan = ((a, b) -> a - b);
         OperatiMatematika perkalian = ((a, b) -> a * b);
+
+        System.out.println("Hasil dari penjumlahan : " + penjumlahan.hitung(10, 5));
+        System.out.println("Hasil dari pengurangan : " + penjumlahan.hitung(10, 5));
+        System.out.println("Hasil dari perkalian : " + penjumlahan.hitung(10, 5));
     }
 }
