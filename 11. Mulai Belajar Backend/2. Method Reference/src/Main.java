@@ -32,6 +32,6 @@ public class Main {
         players.add(new Player("player 2", 300));
         players.add(new Player("player 3", 200));
 
-
+        players.forEach(Player::getInfo);
     }
 }
