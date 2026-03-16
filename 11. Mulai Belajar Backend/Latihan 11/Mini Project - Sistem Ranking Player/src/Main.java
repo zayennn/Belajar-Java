@@ -43,5 +43,12 @@ public class Main {
 
         System.out.println("Jumlah score : " + total_score);
         //        System.out.println("Jumlah player ");
+
+        List<Player> top_player =
+                players.stream()
+                        .filter(player -> player.score > 300)
+                        .collect(Collectors.toList());
+
+        System.out.println("Jumlah player dengan score diatas 300 : " + top_player);
     }
 }
