@@ -12,7 +12,7 @@ public class Main {
         }
 
         void tampil() {
-            System.out.println("Nama : " + nama + " | " + "Nilai : " + nilai);
+            System.out.println("Nama : " + nama + " | " + "Score : " + score);
         }
     }
 }
