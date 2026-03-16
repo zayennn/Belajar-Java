@@ -32,6 +32,7 @@ public class Main{
 
         players.stream()
                 .map(player -> new Player(player.nama, player.score))
-                .forEach(System.out::println);
+                .sorted((a, b) -> b.score - a.score)
+                .forEach(Player::getInfo);
     }
 }
