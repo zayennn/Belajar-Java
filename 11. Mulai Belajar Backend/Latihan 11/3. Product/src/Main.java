@@ -22,5 +22,9 @@ public class Main {
                 new Product("Monitor", 2500000),
                 new Product("Headset", 500000)
         ));
+
+        products.stream()
+                .map(product -> product.nama)
+                .forEach(System.out::println);
     }
 }
