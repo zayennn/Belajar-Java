@@ -34,5 +34,6 @@ public class Main {
 
         players.forEach(Player::getInfo);
 //        bagian ini artinya : untuk setiap player jalanin method getInfo()
+//        versi lambda nya : players.forEach(p -> player.getInfo());
     }
 }
