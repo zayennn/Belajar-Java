@@ -4,6 +4,7 @@
 // contoh program :
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Main{
     static class Player {
@@ -18,5 +19,19 @@ public class Main{
         void getInfo() {
             System.out.println("Nama : " + nama + " | " + "Score : " + score);
         }
+    }
+
+    public static void main(String[] args) {
+        ArrayList<Player> players = new ArrayList<>();
+
+        players.addAll(Arrays.asList(
+                new Player("player 1", 200),
+                new Player("player 2", 300),
+                new Player("player 3", 250)
+        ));
+
+        players.stream()
+                .map(player -> player.nama)
+                .forEach(System.out::println);
     }
 }
