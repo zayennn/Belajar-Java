@@ -1,1 +1,1 @@
-// mini projetc
+// mini project
