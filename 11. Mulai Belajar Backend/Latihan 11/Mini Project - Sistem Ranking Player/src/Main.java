@@ -36,9 +36,12 @@ public class Main {
                 .map(player -> player.nama)
                 .forEach(System.out::println);
 
-        List<Player> total_score =
+        int total_score =
                 players.stream()
-                        .filter(player -> player.score)
-                        .collect(Collectors.toList());
+                        .map(player -> player.score)
+                        .reduce(0, (a, b) -> a + b);
+
+        System.out.println("Jumlah score : " + total_score);
+        //        System.out.println("Jumlah player ");
     }
 }
