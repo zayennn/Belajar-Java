@@ -25,5 +25,13 @@ public class Main {
         }
     }
 
+    public static void main(String[] args) {
+        ArrayList<Player> players = new ArrayList<>();
 
+        players.add(new Player("player 1", 100));
+        players.add(new Player("player 2", 300));
+        players.add(new Player("player 3", 200));
+
+
+    }
 }
