@@ -1,6 +1,7 @@
 // latihan 2
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Main {
     static class Mahasiswa {
@@ -18,6 +19,14 @@ public class Main {
     }
 
     public static void main(String[] args) {
+        ArrayList<Mahasiswa> mahasiswas = new ArrayList<>();
+
+        mahasiswas.addAll(Arrays.asList(
+                new Mahasiswa("mhs 1", 87),
+                new Mahasiswa("mhs 2", 89),
+                new Mahasiswa("mhs 3", 86)
+        ));
+
 
     }
 }
