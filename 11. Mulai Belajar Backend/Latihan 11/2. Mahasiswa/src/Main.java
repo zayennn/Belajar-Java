@@ -16,4 +16,8 @@ public class Main {
             System.out.println("Nama : " + nama + " | " + "Nilai : " + nilai);
         }
     }
+
+    public static void main(String[] args) {
+
+    }
 }
