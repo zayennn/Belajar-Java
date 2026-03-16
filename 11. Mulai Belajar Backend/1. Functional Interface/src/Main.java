@@ -1,22 +1,25 @@
+// functional interface adalah interface yang hanya memiliki satu method abstract
+// contoh paling sederhana :
+
+// interface Hitung {
+//     int operasi(int a, int b);
+// }
+
+// artinya interface ini hanya punya satu kontrak yaitu : operasi(int a, int b)
+// interface seperti ini bisa dipakai oleh lambda expression
+
+// contoh lengkap :
+
 public class Main {
     interface Hitung {
-        int operasi(int x, int y);
+        int operasi(int a, int b);
     }
 
     public static void main(String[] args) {
-        Hitung penjumlahan = ((x, y) -> x + y);
-        Hitung perkalian = ((x, y) -> x * y);
+        Hitung tambah = (a, b) -> a + b;
+        Hitung perkalian = (a, b) -> a * b;
 
-//        kalau gapake lambda code nya bisa panjang, contoh :
-        Hitung pengurangan = new Hitung() {
-            @Override
-            public int operasi(int x, int y) {
-                return x - y;
-            }
-        };
-
-        System.out.println("hasil penjumlahan nya adalah : " + penjumlahan.operasi(10, 20));
-        System.out.println("hasil perkalian nya adalah : " + perkalian.operasi(10, 20));
-        System.out.println("hasil pengurangan nya adalah : " + pengurangan.operasi(20, 10));
+        System.out.println("hasil tambah = " +  tambah.operasi(10, 20));
+        System.out.println("hasil perkalian = " +  perkalian.operasi(10, 20));
     }
 }
