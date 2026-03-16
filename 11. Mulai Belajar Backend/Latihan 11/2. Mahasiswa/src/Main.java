@@ -27,6 +27,6 @@ public class Main {
                 new Mahasiswa("mhs 3", 86)
         ));
 
-
+        mahasiswas.forEach(Mahasiswa::tampil);
     }
 }
