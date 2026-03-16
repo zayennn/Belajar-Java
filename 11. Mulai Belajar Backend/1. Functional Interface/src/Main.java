@@ -29,7 +29,7 @@ public class Main {
         Hitung perkalian = new Hitung() {
             @Override
             public int operasi(int a, int b) {
-                return a + b;
+                return a * b;
             }
         };
 
