@@ -33,5 +33,6 @@ public class Main {
         players.add(new Player("player 3", 200));
 
         players.forEach(Player::getInfo);
+//        bagian ini artinya : untuk setiap player jalanin method getInfo()
     }
 }
