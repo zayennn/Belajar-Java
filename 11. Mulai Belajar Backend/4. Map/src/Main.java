@@ -31,7 +31,7 @@ public class Main{
         ));
 
         players.stream()
-                .map(player -> player.nama)
+                .map(player -> new Player(player.nama, player.score))
                 .forEach(System.out::println);
     }
 }
