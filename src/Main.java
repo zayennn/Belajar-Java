@@ -19,6 +19,6 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        ArrayList<User> users =
+        ArrayList<User> users = new
     }
 }
