@@ -21,6 +21,6 @@ public class Main {
     public static void main(String[] args) {
         ArrayList<User> users = new ArrayList<>();
         users.add(new User("zayen", 19));
-        users.forEach(System.out::println);
+        users.forEach(User::getInfo);
     }
 }
