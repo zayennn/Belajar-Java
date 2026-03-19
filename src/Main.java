@@ -9,13 +9,20 @@ public class Main {
             this.name = name;
             this.age = age;
         }
+
+        void getInfo() {
+            System.out.printf("""
+                    Name    : %s
+                    Age     : %d
+                    """, name, age);
+        }
     }
 
     public static void main(String[] args) {
-        HashMap<String, Integer> user = new HashMap<>();
+        HashMap<String, User<?>> users = new HashMap<>();
 
-        user.put("zayen", 19);
+        User<Integer> user1 = new User<>("zayen", 19);
 
-        System.out.println(user);
+        user.getInfo();
     }
 }
