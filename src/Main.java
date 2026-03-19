@@ -13,7 +13,7 @@ public class Main {
         void getInfo() {
             System.out.printf("""
                     Name    : %s
-                    Age     : %d
+                    Age     : %s
                     """, name, age);
         }
     }
