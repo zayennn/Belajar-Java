@@ -18,5 +18,5 @@ public class Main {
         }
     }
 
-    public
+    public static
 }
