@@ -23,6 +23,8 @@ public class Main {
 
         User<Integer> user1 = new User<>("zayen", 19);
 
-        user.getInfo();
+        users.put("user1", user1);
+
+        users.get("user1").getInfo();
     }
 }
