@@ -12,6 +12,10 @@ public class Main {
     }
 
     public static void main(String[] args) {
+        HashMap<String, Integer> user = new HashMap<>();
 
+        user.put("zayen", 19);
+
+        System.out.println(user);
     }
 }
