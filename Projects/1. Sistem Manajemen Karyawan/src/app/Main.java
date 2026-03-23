@@ -5,6 +5,7 @@ import service.KaryawanService;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java
 
 public class Main {
     public static void main(String[] args) {
@@ -23,7 +24,10 @@ public class Main {
                     2. Hapus Karyawan
                     3. Tampilan Semua Karyawan
                     4. Cari Karyawan Berdasarkan Nama
-                    """)
+                    5. Sorting ( gaji / umur )
+                    6. Filter ( gaji > / < Sekian )
+                    7. Keluar
+                    """);
         }
     }
 }
