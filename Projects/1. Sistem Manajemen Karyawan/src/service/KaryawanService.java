@@ -21,6 +21,7 @@ public class KaryawanService {
                 Nama    : %s
                 Umur    : %d
                 Gaji    : %s
+                
                 """, karyawan.nama, karyawan.umur, FormatNumber.rupiah.format(karyawan.gaji));
     }
 }
