@@ -19,15 +19,35 @@ public class Main {
             rupiah.setMaximumFractionDigits(0);
         }
 
+        Karyawan(String nama, int umur, int gaji) {
+            this.nama = nama;
+            this.umur = umur;
+            this.gaji = gaji;
+        }
 
+        void getInfoKaryawan() {
+            System.out.printf("""
+                    Nama    : %s
+                    Umur    : %d
+                    Gaji    : %s
+                    """, nama, umur, rupiah.format(gaji));
+        }
 
         @Override
-        public int compareTo(Karyawan o) {
-            return 0;
+        public int compareTo(Karyawan other) {
+            return other.gaji - this.gaji;
         }
     }
 
     public static void main(String[] args) {
+        ArrayList<Karyawan> karyawans = new ArrayList<>();
 
+        karyawans.addAll(java.util.Arrays.asList(
+                new Karyawan("karyawan 1", 20, 5000000),
+                new Karyawan("karyawan 2", 18, 5000000),
+                new Karyawan("karyawan 3", 26, 5000000)
+        ));
+
+        karyawans.forEach(Karyawan::getInfoKaryawan);
     }
 }
