@@ -5,10 +5,12 @@ import service.KaryawanService;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
         ArrayList<Karyawan> karyawans = new ArrayList<>();
 
         karyawans.addAll(java.util.Arrays.asList(
@@ -28,6 +30,10 @@ public class Main {
                     6. Filter ( gaji > / < Sekian )
                     7. Keluar
                     """);
+
+            System.out.print("Masukan menu pilihan anda (1/2/3/4/5/6/7) : ");
+            int menu = input.nextInt();
+            input.nextLine();
         }
     }
 }
