@@ -71,6 +71,8 @@ public class Main {
                         KaryawanService.getInfoKaryawan(hasil);
                     }
 
+                    break;
+
                 case 7 :
                     System.out.println("Terimakasih...");
                     return;
