@@ -21,6 +21,7 @@ public class Main {
 
         while(true) {
             System.out.println("""
+                    
                     ============================ Sistem Manajemen Karyawan ============================
                     1. Tambah Karyawan
                     2. Hapus Karyawan
@@ -34,6 +35,19 @@ public class Main {
             System.out.print("Masukan menu pilihan anda (1/2/3/4/5/6/7) : ");
             int menu = input.nextInt();
             input.nextLine();
+
+            switch (menu) {
+                case 1 :
+                    System.out.print("Masukan nama karyawan : ");
+                    String nama = input.nextLine();
+
+                    System.out.print("Masukan umur karyawan : ");
+                    int umur = input.nextInt();
+                    input.nextLine();
+
+                    System.out.print("Masukan gaji karyawan : ");
+
+            }
         }
     }
 }
