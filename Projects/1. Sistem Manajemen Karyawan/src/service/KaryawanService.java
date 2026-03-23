@@ -16,6 +16,16 @@ public class KaryawanService {
         }
     }
 
+    public static Karyawan cariNama(java.util.List<Karyawan> list, String nama) {
+        for (Karyawan k : list) {
+            if (k.nama.equalsIgnoreCase(nama)) {
+                return k;
+            }
+        }
+
+        return null;
+    }
+
     public static void getInfoKaryawan(Karyawan karyawan) {
         System.out.printf("""
                 Nama    : %s

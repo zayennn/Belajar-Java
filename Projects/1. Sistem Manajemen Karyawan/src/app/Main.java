@@ -60,6 +60,17 @@ public class Main {
                     }
                     break;
 
+                case 4 :
+                    System.out.print("Cari nama karyawan yang ingin anda cari : ");
+                    String keyword = input.nextLine();
+
+                    Karyawan hasil = KaryawanService.cariNama(karyawans, keyword);
+
+                    if (hasil != null) {
+                        System.out.println("Ditemukan :");
+                        KaryawanService.getInfoKaryawan(hasil);
+                    }
+
                 case 7 :
                     System.out.println("Terimakasih...");
                     return;
