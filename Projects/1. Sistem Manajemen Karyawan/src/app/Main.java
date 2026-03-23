@@ -46,7 +46,26 @@ public class Main {
                     input.nextLine();
 
                     System.out.print("Masukan gaji karyawan : ");
+                    int gaji = input.nextInt();
+                    input.nextLine();
 
+                    karyawans.add(new Karyawan(nama, umur, gaji));
+
+                    System.out.println("Karyawan Berhasil Ditambahkan!");
+                    break;
+
+                case 3 :
+                    for (Karyawan k : karyawans) {
+                        KaryawanService.getInfoKaryawan(k);
+                    }
+                    break;
+
+                case 7 :
+                    System.out.println("Terimakasih...");
+                    return;
+
+                default :
+                    throw new IllegalArgumentException("Mohon pilih menu yang valid");
             }
         }
     }
