@@ -10,6 +10,15 @@ public class Main {
         private int umur;
         private int gaji;
 
+        private final static Locale indonesia = new Locale("id", "ID");
+        private final static NumberFormat rupiah;
+
+        static {
+            rupiah = NumberFormat.getCurrencyInstance(indonesia);
+            rupiah.setMinimumFractionDigits(0);
+            rupiah.setMaximumFractionDigits(0);
+        }
+
 
 
         @Override
