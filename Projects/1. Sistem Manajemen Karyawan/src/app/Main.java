@@ -28,7 +28,13 @@ public class Main {
             int menu = input.nextInt();
             input.nextLine();
 
+            switch (menu) {
+                case 1 :
+                    System.out.print("Masukan nama karyawan : ");
+                    String nama = input.nextLine();
 
+                    System.out.print("");
+            }
         }
     }
 }
