@@ -46,7 +46,11 @@ public class Main {
                         System.out.print("Masukan gaji karwayan : ");
                         int gaji = input.nextInt();
                         input.nextLine();
+
+                        karyawans.add(new Karyawan(nama, umur, gaji));
                     }
+
+                    System.out.print("Karyawan berhasil di tambahkan!");
 
                     break;
             }
