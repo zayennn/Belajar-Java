@@ -54,6 +54,9 @@ public class Main {
 
                     break;
 
+                case 2 :
+                    System.out.print("Siapa nama karyawan yang ingin anda hapus ? : ");
+
                 case 3 :
                     System.out.println("");
                     karyawans.forEach(KaryawanService::getInfoKaryawan);
