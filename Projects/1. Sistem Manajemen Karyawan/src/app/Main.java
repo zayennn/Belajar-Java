@@ -27,6 +27,8 @@ public class Main {
             System.out.print("Pilih opsi anda (1/2/3/4/5/6/7) : ");
             int menu = input.nextInt();
             input.nextLine();
+
+
         }
     }
 }
