@@ -56,6 +56,13 @@ public class Main {
 
                 case 2 :
                     System.out.print("Siapa nama karyawan yang ingin anda hapus ? : ");
+                    String hapus = input.nextLine();
+
+                    if (hapus != null) {
+                        karyawans.removeIf(karyawan -> karyawan.nama.equalsIgnoreCase(hapus));
+                    } else {
+                        System.out.println("Karyawan tidak ditemukan!");
+                    }
 
                 case 3 :
                     System.out.println("");
@@ -66,11 +73,13 @@ public class Main {
                     System.out.print("Cari nama karyawan : ");
                     String nama = input.nextLine();
 
-                    Karyawan hasil = KaryawanService.getNamaKaryawan(karyawans, nama);
+                    Karyawan cari = KaryawanService.getNamaKaryawan(karyawans, nama);
 
-                    if (hasil != null) {
+                    if (cari != null) {
                         System.out.println("Karyawan ditemukan!");
-                        KaryawanService.getInfoKaryawan(hasil);
+                        KaryawanService.getInfoKaryawan(cari);
+                    } else {
+                        System.out.println("Karyawan tidak ditemukan!");
                     }
             }
         }
