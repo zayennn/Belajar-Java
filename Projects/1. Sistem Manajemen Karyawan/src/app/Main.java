@@ -17,7 +17,8 @@ public class Main {
                     1. Tambah karyawan
                     2. Hapus karyawan
                     3. Tampilkan semua karyawan
-                    4. 
+                    4. Cari karyawan berdasarkan nama
+                    
                     """);
         }
     }
