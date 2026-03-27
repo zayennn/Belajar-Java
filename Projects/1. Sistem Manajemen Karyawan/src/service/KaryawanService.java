@@ -15,7 +15,17 @@ public class KaryawanService {
         rupiah.setMaximumFractionDigits(0);
     }
 
-    public void getInfoKaryawan(Karyawan k) {
+    public static Karyawan getNamaKaryawan(java.util.List<Karyawan> list, String nama) {
+        for (Karyawan k : list) {
+            if (k.nama.equalsIgnoreCase(nama)) {
+                return k;
+            }
+        }
+
+        return null;
+    }
+
+    public static void getInfoKaryawan(Karyawan k) {
         System.out.printf("""
                 Nama        : %s
                 Umur        : %d

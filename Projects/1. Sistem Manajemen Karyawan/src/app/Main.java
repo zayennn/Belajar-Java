@@ -9,7 +9,6 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         ArrayList<Karyawan> karyawans = new ArrayList<>();
-        KaryawanService service = new KaryawanService();
         Scanner input = new Scanner(System.in);
 
         while(true) {
@@ -57,8 +56,19 @@ public class Main {
 
                 case 3 :
                     System.out.println("");
-                    karyawans.forEach(service::getInfoKaryawan);
+                    karyawans.forEach(KaryawanService::getInfoKaryawan);
                     break;
+
+                case 4 :
+                    System.out.print("Cari nama karyawan : ");
+                    String nama = input.nextLine();
+
+                    Karyawan hasil = KaryawanService.getNamaKaryawan(karyawans, nama);
+
+                    if (hasil != null) {
+                        System.out.println("Karyawan ditemukan!");
+
+                    }
             }
         }
     }
