@@ -51,11 +51,12 @@ public class Main {
                         karyawans.add(new Karyawan(nama, umur, gaji));
                     }
 
-                    System.out.println("Karyawan berhasil di tambahkan!");
+                    System.out.println("\nKaryawan berhasil di tambahkan!");
 
                     break;
 
                 case 3 :
+                    System.out.println("");
                     karyawans.forEach(service::getInfoKaryawan);
                     break;
             }
