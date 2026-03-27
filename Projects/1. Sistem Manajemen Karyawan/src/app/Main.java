@@ -15,7 +15,7 @@ public class Main {
             System.out.println("""
                     ================== Sistem Manajemen Karyawan ==================
                     1. Tambah Karyawan
-                    2. 
+                    2. Hapus Karyawan
                     """);
         }
     }
