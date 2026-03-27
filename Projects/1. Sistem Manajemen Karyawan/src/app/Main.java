@@ -10,6 +10,7 @@ public class Main {
     public static void main(String[] args) {
         ArrayList<Karyawan> karyawans = new ArrayList<>();
         KaryawanService service = new KaryawanService();
+        Scanner input = new Scanner(System.in);
 
         while(true) {
             System.out.println("""
@@ -22,6 +23,8 @@ public class Main {
                     6. Filter (gaji > sekian)
                     7. Keluar
                     """);
+
+            System.out.print("Pilih opsi anda (1 / 2 / 3 / 4 / 5 / 6 / 7) : ");
         }
     }
 }
