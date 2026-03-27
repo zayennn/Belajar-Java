@@ -33,7 +33,10 @@ public class Main {
                     System.out.print("Masukan nama karyawan : ");
                     String nama = input.nextLine();
 
-                    System.out.print("");
+                    System.out.print("Masukan umur karyawan : ");
+                    int umur = input.nextInt();
+
+
             }
         }
     }
