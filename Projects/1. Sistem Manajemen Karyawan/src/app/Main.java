@@ -18,7 +18,7 @@ public class Main {
                     2. Hapus karyawan
                     3. Tampilkan semua karyawan
                     4. Cari karyawan berdasarkan nama
-                    
+                    5. Sorting (gaji/umur)
                     """);
         }
     }
