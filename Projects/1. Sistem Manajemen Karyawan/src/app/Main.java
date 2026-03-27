@@ -19,6 +19,7 @@ public class Main {
                     3. Tampilkan semua karyawan
                     4. Cari karyawan berdasarkan nama
                     5. Sorting (gaji/umur)
+                    6. Filter (gaji > sekian)
                     """);
         }
     }
