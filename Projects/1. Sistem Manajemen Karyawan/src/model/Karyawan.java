@@ -1,9 +1,9 @@
 package model;
 
 public class Karyawan {
-    String nama;
-    int umur;
-    int gaji;
+    public String nama;
+    public int umur;
+    public int gaji;
 
     public Karyawan(String nama, int umur, int gaji) {
         this.nama = nama;
