@@ -54,6 +54,10 @@ public class Main {
                     System.out.println("Karyawan berhasil di tambahkan!");
 
                     break;
+
+                case 3 :
+                    karyawans.forEach(service::getInfoKaryawan);
+                    break;
             }
         }
     }
