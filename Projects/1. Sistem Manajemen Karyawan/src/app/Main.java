@@ -30,13 +30,23 @@ public class Main {
 
             switch (menu) {
                 case 1 :
-                    System.out.print("Masukan nama karyawan : ");
-                    String nama = input.nextLine();
+                    System.out.print("Berapa jumlah karyawan yang ingin anda input ? : ");
+                    int jumlah_input_karyawan = input.nextInt();
+                    input.nextLine();
 
-                    System.out.print("Masukan umur karyawan : ");
-                    int umur = input.nextInt();
+                    for (int i = 0; i < jumlah_input_karyawan; i++) {
+                        System.out.println("Input karyawan ke - " + i + 1);
+                        System.out.print("Masukan nama karyawan : ");
+                        String nama = input.nextLine();
 
+                        System.out.print("Masukan umur karyawan : ");
+                        int umur = input.nextInt();
+                        input.nextLine();
 
+                        System.out.print("Masukan gaji karwayan : ");
+                        int gaji = input.nextInt();
+                        input.nextLine();
+                    }
             }
         }
     }
