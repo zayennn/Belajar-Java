@@ -67,7 +67,7 @@ public class Main {
 
                     if (hasil != null) {
                         System.out.println("Karyawan ditemukan!");
-
+                        karyawans.forEach(KaryawanService::getInfoKaryawan);
                     }
             }
         }
