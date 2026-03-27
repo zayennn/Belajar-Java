@@ -14,8 +14,10 @@ public class Main {
         while(true) {
             System.out.println("""
                     ================== Sistem Manajemen Karyawan ==================
-                    1. Tambah Karyawan
-                    2. Hapus Karyawan
+                    1. Tambah karyawan
+                    2. Hapus karyawan
+                    3. Tampilkan semua karyawan
+                    4. 
                     """);
         }
     }
