@@ -35,7 +35,7 @@ public class Main {
                     input.nextLine();
 
                     for (int i = 0; i < jumlah_input_karyawan; i++) {
-                        System.out.println("\nInput karyawan ke - " + i + 1);
+                        System.out.println("\nInput karyawan ke - " + (i + 1));
                         System.out.print("Masukan nama karyawan : ");
                         String nama = input.nextLine();
 
