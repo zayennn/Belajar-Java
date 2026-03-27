@@ -14,6 +14,7 @@ public class Main {
 
         while(true) {
             System.out.println("""
+                    
                     ================== Sistem Manajemen Karyawan ==================
                     1. Tambah karyawan
                     2. Hapus karyawan
@@ -50,7 +51,7 @@ public class Main {
                         karyawans.add(new Karyawan(nama, umur, gaji));
                     }
 
-                    System.out.print("Karyawan berhasil di tambahkan!");
+                    System.out.println("Karyawan berhasil di tambahkan!");
 
                     break;
             }
