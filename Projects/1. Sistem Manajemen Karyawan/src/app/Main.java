@@ -12,6 +12,7 @@ public class Main {
 
         karyawans.addAll(java.util.Arrays.asList(
                 new Karyawan("elang", 19, 1000000),
+
                 new Karyawan("zayen", 19, 1000000),
                 new Karyawan("alan", 19, 1000000)
         ));

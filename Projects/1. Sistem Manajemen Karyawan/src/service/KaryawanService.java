@@ -19,7 +19,7 @@ public class KaryawanService {
         System.out.printf("""
                 Nama        : %s
                 Umur        : %d
-                Gaji        : %d
+                Gaji        : %s
                 Perusahaan  : %s
                 
                 """, k.nama, k.umur, rupiah.format(k.gaji), Karyawan.perusahaan);
