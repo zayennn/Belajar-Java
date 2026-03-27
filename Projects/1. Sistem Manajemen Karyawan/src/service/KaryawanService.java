@@ -20,8 +20,7 @@ public class KaryawanService {
                 Nama        : %s
                 Umur        : %d
                 Gaji        : %s
-                Perusahaan  : %s
                 
-                """, k.nama, k.umur, rupiah.format(k.gaji), Karyawan.perusahaan);
+                """, k.nama, k.umur, rupiah.format(k.gaji));
     }
 }

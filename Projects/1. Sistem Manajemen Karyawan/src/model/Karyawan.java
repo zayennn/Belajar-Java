@@ -4,7 +4,6 @@ public class Karyawan {
     public String nama;
     public int umur;
     public int gaji;
-    public static String perusahaan;
 
     public Karyawan(String nama, int umur, int gaji) {
         this.nama = nama;

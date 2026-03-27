@@ -20,6 +20,7 @@ public class Main {
                     4. Cari karyawan berdasarkan nama
                     5. Sorting (gaji/umur)
                     6. Filter (gaji > sekian)
+                    7. Keluar
                     """);
         }
     }
