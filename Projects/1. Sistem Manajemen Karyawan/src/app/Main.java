@@ -47,6 +47,8 @@ public class Main {
                         int gaji = input.nextInt();
                         input.nextLine();
                     }
+
+                    break;
             }
         }
     }
