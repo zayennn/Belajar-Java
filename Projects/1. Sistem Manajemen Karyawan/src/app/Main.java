@@ -10,7 +10,6 @@ public class Main {
         ArrayList<Employee> employees = new ArrayList<>();
         Scanner input = new Scanner(System.in);
 
-
         employees.addAll(java.util.Arrays.asList(
                 new Employee("karyawan 1", 20, 5000000),
                 new Employee("karyawan 2", 20, 3000000),
