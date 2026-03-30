@@ -8,6 +8,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         ArrayList<Employee> employees = new ArrayList<>();
+        Scanner input = new Scanner(System.in);
 
         while (true) {
             System.out.print("""
@@ -20,6 +21,10 @@ public class Main {
                     6. Filter (gaji > sekian)
                     7. Keluar
                     """);
+
+            System.out.print("Masukan pilihan menu yang anda inginkan (1/2/3/4/5/6/7) : ");
+            int menu = input.nextInt();
+            input.nextLine();
         }
     }
 }
