@@ -8,6 +8,7 @@ public class EmployeeService {
                 Name    : %s
                 Age     : %d
                 Salary  : %d
+                
                 """, emp.name, emp.age, emp.salary);
     }
 }
