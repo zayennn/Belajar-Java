@@ -3,7 +3,7 @@ package service;
 import model.Employee;
 
 public class EmployeeService {
-    void getInfoEmplooyes(Employee emp) {
+    public static void getInfoEmplooyes(Employee emp) {
         System.out.printf("""
                 Name    : %s
                 Age     : %d

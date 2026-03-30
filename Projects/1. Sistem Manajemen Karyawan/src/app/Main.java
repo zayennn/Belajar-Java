@@ -1,6 +1,7 @@
 package app;
 
 import model.Employee;
+import service.EmployeeService;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -16,9 +17,7 @@ public class Main {
                 new Employee("karyawan 3", 20, 5400000)
         ));
 
-        for (int i = 0; i < employees.size(); i++) {
-            System.out.println(employees.get(i).name);
-        }
+        employees.forEach(EmployeeService::getInfoEmplooyes);
 
 //        while (true) {
 //            System.out.print("""
