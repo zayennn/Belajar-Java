@@ -18,7 +18,7 @@ public class Main {
         ));
 
         for (int i = 0; i < employees.size(); i++) {
-            System.out.print(employees.get(i).name);
+            System.out.println(employees.get(i).name);
         }
 
 //        while (true) {
