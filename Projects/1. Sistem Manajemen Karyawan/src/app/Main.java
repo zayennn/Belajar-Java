@@ -36,7 +36,9 @@ public class Main {
 
             switch (menu) {
                 case 1 :
-                    System.out.print();
+                    System.out.print("Berapa karyawan yang ingin anda tambahkan ? : ");
+                    int jumlah_input = input.nextInt();
+                    input.nextLine();
             }
         }
     }
