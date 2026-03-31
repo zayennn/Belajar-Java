@@ -18,6 +18,10 @@ public class Main {
                 new Employee("karyawan 3", 20, 5400000)
         ));
 
-        employees.forEach(service::getInfoEmplooyes);
+        while (true) {
+            System.out.print("""
+                    ======================   ======================
+                    """);
+        }
     }
 }
