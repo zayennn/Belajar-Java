@@ -37,11 +37,16 @@ public class Main {
             switch (menu) {
                 case 1 :
                     System.out.print("Berapa karyawan yang ingin anda tambahkan ? : ");
-                    int jumlah_input = input.nextInt();
+                    int number_of_inputs = input.nextInt();
                     input.nextLine();
 
-                    for (int i = 0; i < jumlah_input; i++) {
-                        System.out.print();
+                    for (int i = 0; i < number_of_inputs; i++) {
+                        System.out.print("Masukan nama karyawan : ");
+                        String name = input.nextLine();
+
+                        System.out.print("Masukan umur karyawan : ");
+                        int age = input.nextInt();
+                        input.nextLine();
                     }
             }
         }
