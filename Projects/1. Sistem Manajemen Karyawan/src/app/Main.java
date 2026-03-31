@@ -59,7 +59,7 @@ public class Main {
                     System.out.print("Siapa nama karyawan yang ingin anda hapus ? : ");
                     String name = input.nextLine();
 
-                    employees.removeIf(employee -> employee.equals(String.format("%s", name)));
+                    employees.removeIf(employee -> employee.equals(name));
 
                     break;
 
