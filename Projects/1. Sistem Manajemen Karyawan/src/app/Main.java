@@ -54,6 +54,12 @@ public class Main {
                     }
 
                     break;
+
+                case 2 :
+                    break;
+
+                case 3 :
+                    employees.forEach(service::getInfoEmplooyes);
             }
         }
     }
