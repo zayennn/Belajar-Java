@@ -49,6 +49,8 @@ public class Main {
                         input.nextLine();
 
                         System.out.print("Masukan gaji karyawan : ");
+                        int salary = input.nextInt();
+                        input.nextLine();
                     }
             }
         }
