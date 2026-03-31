@@ -33,6 +33,11 @@ public class Main {
             System.out.print("Masukan menu pilihan anda : ");
             int menu = input.nextInt();
             input.nextLine();
+
+            switch (menu) {
+                case 1 :
+                    System.out.print();
+            }
         }
     }
 }
