@@ -52,6 +52,8 @@ public class Main {
                         int salary = input.nextInt();
                         input.nextLine();
                     }
+
+                    break;
             }
         }
     }
