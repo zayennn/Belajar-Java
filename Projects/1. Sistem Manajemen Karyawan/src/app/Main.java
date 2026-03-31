@@ -35,7 +35,7 @@ public class Main {
             input.nextLine();
 
             switch (menu) {
-                case 1 :
+                case 1:
                     System.out.print("Berapa karyawan yang ingin anda tambahkan ? : ");
                     int number_of_inputs = input.nextInt();
                     input.nextLine();
@@ -55,7 +55,7 @@ public class Main {
 
                     break;
 
-                case 2 :
+                case 2:
                     System.out.print("Siapa nama karyawan yang ingin anda hapus ? : ");
                     String name = input.nextLine();
 
@@ -63,13 +63,25 @@ public class Main {
 
                     break;
 
-                case 3 :
+                case 3:
                     employees.forEach(service::getInfoEmplooyes);
                     break;
 
-                case 4 :
+                case 4:
                     System.out.print("Masukan nama karyawan yang ingin anda cari : ");
                     String search_name = input.nextLine();
+
+                    Employee result = EmployeeService.getNama(employees, search_name);
+
+                    if (result != null) {
+                        System.out.println("Nama karyawan ditemukan : ");
+                        System.out.printf("""
+                                Name    : %s
+                                Age     : %d
+                                Salary  : %d
+                                
+                                """, result.name, result.age, result.salary);
+                    }
 
                     break;
             }
