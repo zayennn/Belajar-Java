@@ -47,6 +47,8 @@ public class Main {
                         System.out.print("Masukan umur karyawan : ");
                         int age = input.nextInt();
                         input.nextLine();
+
+                        System.out.print("Masukan gaji karyawan : ");
                     }
             }
         }
