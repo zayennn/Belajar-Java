@@ -68,6 +68,9 @@ public class Main {
                     break;
 
                 case 4 :
+                    System.out.print("Masukan nama karyawan yang ingin anda cari : ");
+                    String search_name = input.nextLine();
+
                     break;
             }
         }
