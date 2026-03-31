@@ -11,4 +11,8 @@ public class EmployeeService {
                 
                 """, emp.name, emp.age, emp.salary);
     }
+
+    public void getNama(java.util.List<Employee> list, String nama) {
+
+    }
 }
