@@ -39,6 +39,10 @@ public class Main {
                     System.out.print("Berapa karyawan yang ingin anda tambahkan ? : ");
                     int jumlah_input = input.nextInt();
                     input.nextLine();
+
+                    for (int i = 0; i < jumlah_input; i++) {
+                        System.out.print();
+                    }
             }
         }
     }
