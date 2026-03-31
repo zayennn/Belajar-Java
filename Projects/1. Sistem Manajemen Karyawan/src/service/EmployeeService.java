@@ -12,7 +12,11 @@ public class EmployeeService {
                 """, emp.name, emp.age, emp.salary);
     }
 
-    public void getNama(java.util.List<Employee> list, String nama) {
-
+    public static Employee getNama(java.util.List<Employee> list, String name) {
+        for (Employee emp : list) {
+            if (emp.name.equalsIgnoreCase(name)) {
+                return emp;
+            }
+        }
     }
 }
