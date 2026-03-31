@@ -56,10 +56,18 @@ public class Main {
                     break;
 
                 case 2 :
+                    System.out.print("Siapa nama karyawan yang ingin anda hapus ? : ");
+                    String name = input.nextLine();
+                    employees.removeIf(employee -> employee.equals(""));
+
                     break;
 
                 case 3 :
                     employees.forEach(service::getInfoEmplooyes);
+                    break;
+
+                case 4 :
+                    employees.
             }
         }
     }
