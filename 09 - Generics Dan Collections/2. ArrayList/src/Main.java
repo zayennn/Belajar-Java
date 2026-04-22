@@ -16,4 +16,4 @@ public class Main {
     • lebih dinamis
     • banyak method built in
     • lebih fleksibel
- */
+*/

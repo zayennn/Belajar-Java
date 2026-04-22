@@ -5,7 +5,6 @@ public class Main {
     }
 
     public static void main(String[] args) {
-
         Mahasiswa m1 = new Mahasiswa();
         m1.nama = "Elang";
         m1.umur = 19;
